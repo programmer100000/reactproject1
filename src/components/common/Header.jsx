@@ -50,7 +50,7 @@ const Header = () => {
                                     <img className="w-20" src='./img/logo192.png' />
                                 </a>
                            </div>
-                           <div class="col-3   ">
+                           <div className="col-3   ">
                             
                             <div className="top-nav-login-store d-flex  align-items-center justify-content-end">
                             <NavLink to='/login' className='top-nav-login border border-white px-2 pb-1  d-flex align-items-center'>
@@ -58,7 +58,7 @@ const Header = () => {
                                     className='border-0 text-white'>
                                     <img className="" src='./img/user-login1.png' />
                                 </button>
-                                <span class="top-nav-login-text text-white">
+                                <span className="top-nav-login-text text-white">
                                     ورود به حساب کاربری
                                 </span>
                             </NavLink>

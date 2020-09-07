@@ -3,6 +3,7 @@ import { reducers } from './../reducers/index';
 
 import thunk from 'redux-thunk';
 import { getUser, getProduct } from '../actions/product';
+import { getslider } from '../actions/slider';
 
 
 export const store = createStore(
@@ -16,3 +17,4 @@ export const store = createStore(
 );
 
 store.dispatch(getProduct());
+store.dispatch(getslider());

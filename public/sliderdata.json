@@ -1,0 +1,20 @@
+{
+    "sliderimgs": [
+        {
+            "id": 1,
+            "imageUrl": "./img/logo192.png"
+          
+        },
+        {
+            "id":2,
+            "imageUrl": "./img/logo192.png"
+        }, {
+            "id": 3,
+            "imageUrl": "./img/logo192.png"
+        }, {
+            "id": 4,
+            "imageUrl": "./img/logo192.png"
+        }
+    ]
+
+}
