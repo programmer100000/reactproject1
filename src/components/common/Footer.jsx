@@ -4,29 +4,41 @@ import React, { Fragment } from 'react';
 const Footer = () => {
     return (
         <Fragment>
-            <div className='container-fluid m-0 p-0'>
-                <div className="row w-100 m-0 p-0 top-footer align-items-center">
-                    <div className="col-md-6 footer-sec footer-number  text-white p-4">
-                        <span>شماره تماس : 0211234567</span>
-                    </div>
-                    <div className="col-md-6 footer-sec p-4 ">
-                        <img className="mx-2" src="./img/top-footer1.png" />
-                        <img className="mx-2" src="./img/top-footer1.png" />
-                        <img className="mx-2" src="./img/top-footer1.png" />
-
-                    </div>
+            <div className="row footer-bg p-0 m-0">
+            <div className='container total-footer'>
+                <div className="row w-100 m-0 px-0 py-2 pt-5 ">
+                   <div className="col-12 m-0 p-0 d-flex footer-item align-items-center">
+                       <img src="./img/phone.png" alt="" className="phone-img ml-2" />
+                       <span className="text-white">
+                           شماره تلفن: 0910 098 7878
+                       </span>
+                   </div>
                 </div>
-                <div className="row w-100 m-0 p-0 bottom-footer align-items-center">
-                    <div className="col-md-6 footer-sec footer-about p-4 text-white ">
-                        <p>به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد.  </p>
-                    </div>
-                    <div className="col-md-6 footer-sec p-4 ">
-                        <img className="mx-2" src="./img/bottom-footer1.png" />
-                        <img className="mx-2" src="./img/bottom-footer1.png" />
-                        <img className="mx-2" src="./img/bottom-footer1.png" />
-                    </div>
+                <div className="row w-100 m-0 px-0 py-2 ">
+                   <div className="col-12 m-0 p-0 d-flex footer-item align-items-center">
+                       <img src="./img/email.png" alt="" className="email-img ml-2" />
+                       <span className="text-white">
+                           ایمیل: example@gmail.com
+                       </span>
+                   </div>
+                </div>
+                <div className="row w-100 m-0 px-0 py-2 ">
+                   <div className="col-12 m-0 p-0 d-flex footer-item align-items-center">
+                      
+                       <span className="text-white">
+                          سرعت، دقت، بهترین پیشنهادات را با ما تجربه کنید
+                       </span>
+                   </div>
+                </div>
+                <div className="row w-100 m-0 px-0 py-2 ">
+                   <div className="col-12 m-0 p-0 d-flex footer-item align-items-center ">
+                   <img src="./img/sotialmedia.png" alt="" className="sotialmedia-img mt-2" />
+                   
+                   </div>
                 </div>
             </div>
+            </div>
+           
         </Fragment>
     );
 };

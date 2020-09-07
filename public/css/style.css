@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'BYekan';
-    src: url('../fonts/BYekan-webfont.eot') format('eot'), url('../fonts/BYekan-webfont.woff') format('woff'), url('../fonts/BYekan-webfont.ttf') format('truetype');
+    font-family: 'IRANYekan';
+    src: url('../fonts/IRANYekanWeb.woff') format('woff'), url('../fonts/IRANYekanWeb.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,10 +11,11 @@
 
 body {
     direction: rtl;
-    font-family: BYekan;
+    font-family: IRANYekan!important;
     font-size: 16px;
     margin: 0;
     padding: 0;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -62,10 +63,12 @@ h4 {
 
 
 /* Header */
+.header-bg{
+    background-color: #472155;
+}
 .site-header{
-    background-image: url('../img/site-header-bg4.png');
-    background-size: 100% 100%;
-    height: 230px;
+
+    height: 120px;
 }
 .top-nav {
    height: 50%;
@@ -84,7 +87,7 @@ align-items: flex-end;
 }
 .top-nav-login{
     border-radius: 10px;
-    width: 160px;
+    width: 155px;
 }
 .top-nav-search-store{
     width: 160px;
@@ -103,11 +106,13 @@ color: #000;
 }
 .search{
     border-radius: 10px;
+    width: 240px;
+    height: 28px;
 }
 .search input{
     
     display: block;
-    width: 90%;
+    width: 93%;
     height: calc(.5em + .5rem + 2px)!important;
     padding: 0!important;
     background-color: transparent!important;
@@ -117,8 +122,8 @@ color: #000;
     box-shadow: none!important;
 }
 .search img{
-    width: 10%;
-    height: 100%;
+    width: 7%;
+    height: 15px;
 }
 .top-nav-store-link{
     width: 20px;
@@ -200,49 +205,36 @@ color: #000;
     display: block!important;
 }
 
-
 /* End Header */
-
-
 /* Footer */
-
-.top-footer {
-    background-color: #565361;
+.footer-bg{
+    background-color: #472155;
 }
-
-.bottom-footer {
-    background-color: #322f3d;
+.total-footer{
+    height: 230px;
+    background-image: url("../img/footer-bg2.png");
+    background-size: 100% 100%;
 }
-
-.footer-about p {
-    direction: rtl;
-    text-align: justify;
-    font-size: .9rem;
+.phone-img{
+height: 20px;
 }
-
-.footer-number {
-    text-align: right;
+.email-img{
+   height: 15px;
 }
-
+.sotialmedia-img{
+    height: 40px;
+}
 @media only screen and (max-width: 768px) {
-    .footer-sec {
-        text-align: center!important;
-    }
+    
 }
-
-
 /* Footer End */
-
-
 /* Home Page  */
-
 .mozayede-section,
 .newest-products-section,
 .discounts-section,
 .inner-categories-section {
     background-color: #958db3;
 }
-
 .inner-mozayede-item,
 .news-item,
 .newest-products-item,
@@ -250,6 +242,10 @@ color: #000;
 .inner-categories-item {
     background-color: #6c6099;
 }
-
-
+.categories{
+    background-color: #DEFFF8;
+}
+.category-img{
+    width: 50px;
+}
 /* Home Page End */

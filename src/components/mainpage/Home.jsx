@@ -158,7 +158,84 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='categories-section my-4'>
-                    <div className='h4 text-right '>دسته بندی ها</div>
+                    <div className="row p-0 m-0 categories py-3 my-4">
+                        <div className="col-md-2  d-flex align-items-center text-center">
+                        <span className=' mx-0 my-auto  '>دسته بندی ها</span>
+                        </div>
+                        <div className="col-md-10">
+                       
+    <div id="multi-item-example" className="carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
+
+       <a className="btn-floating" href="#multi-item-example" data-slide="next"><i className="fa fa-chevron-right"></i></a>
+      
+      <div className="carousel-inner" role="listbox">
+
+        <div className="carousel-item active">
+        <div className="row">
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/hrdphon.png' />
+            </div>
+
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/hedphon.png' />
+            </div>
+
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/goshi.png' />
+            </div>
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/labtab.png' />
+            </div>
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/xbox.png' />
+            </div>
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/tv.png' />
+            </div>
+          </div>
+     
+
+        </div>
+    
+
+       
+        <div className="carousel-item">
+
+        <div className="row">
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/camera.png' />
+            </div>
+
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/camera.png' />
+            </div>
+
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/camera.png' />
+            </div>
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/camera.png' />
+            </div>
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/camera.png' />
+            </div>
+            <div className="col-md-2 text-center">
+            <img className="category-img" src='./img/camera.png' />
+            </div>
+        </div>
+
+        </div>
+        
+        
+      </div>
+      <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
+
+    </div>
+
+
+                        </div>
+                    </div>
+                   
                     <div className='inner-categories-section'>
                         <div className='row w-100 p-0 m-0 '>
                             <div className='col-md-6 categories-item p-2'>
