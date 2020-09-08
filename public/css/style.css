@@ -256,31 +256,76 @@ height: 20px;
     background-color: #6c6099;
 }
 .categories{
-    background-color: #FFFB78;
+    background-color: #FFBCC9;
 }
 .category-img{
     width: 50px;
 }
 
-.main-carousel {
+
+/* 2222222222222222222222222222222222222222222222222222222222222222222222222222 */
+.variable-width {
     background: #CE252C;
-    padding: 2rem 0;
+    padding: 2rem ;
+
   }
-  
-  .carousel-cell {
-    width: 66%;
-    height: 250px;
-    margin-right: 10px;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    
-    text-align: center;
+ .slick-slide{
+     width: 200px!important;
+  height: 250px!important;
+      text-align: center;
+      border: 1px solid #fff;
+      margin: 0 5px;
   }
-  
-  
-  .carousel-cell img {
+  .slick-slide img{
+      width: 100%;
+  }
+
+  .slider-img{
+      margin: 0 auto;
+  }
+ 
+  .slick-current{
+      background-color: red;
+      width: 520px!important;
+      height: 250px;
    
+  }
+  .slick-current img{
+      width: 50%;
+  }
+  .slick-next{
+      right: 100px!important;
+  }
+  .slick-prev {
+    left: 100px!important;
+  }
+
+
+
+
+
+  /* 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+  .main-carousel{
+    background: #FFED47;
+    padding: 2rem ;
+    height: 300px;
+  }
+  /* .is-selected{
+    width: 50%!important;
+    background:gold;
+     
+  } */
+  /* .flickity-slider{
+    transform: translateX(25%)!important;
+  } */
+  .carousel-cell{
+      width: 32.5%;
+      height: 250px;
+      border: 1px solid #fff;
+      margin-right: 10px;
+  }
+  .carousel-cell img {
+   margin: auto 0;
     max-width: 100%;
     max-height: 100%;
   }
@@ -288,14 +333,34 @@ height: 20px;
       display: none!important;
   }
   .flickity-prev-next-button.next {
-    right: 17%!important;
+    right: 25%!important;
 }
 .flickity-prev-next-button.previous{
-    left: 17%!important;  
+    left: 25%!important;  
 }
 .flickity-button {
     background: transparent!important;
     color: #fff!important;
+}
+
+
+
+.top-auction{
+    background-image: url("../img/top-autcion.png");
+    background-size: 100% 100%;
+}
+.auction-img img{
+    width: 100%;
+}
+.main-heading img{
+    width: 30px; 
+}
+.time{
+    font-size: 2rem;
+}
+.discounts-section{
+    height: 250px;
+    background: #FFED47;
 }
 /* Home Page End */
 

@@ -2,19 +2,29 @@
     "sliderimgs": [
         {
             "id": 1,
-            "imageUrl": "./img/logo192.png"
+            "imageUrl": "./img/slider1.png"
           
         },
         {
             "id":2,
-            "imageUrl": "./img/logo192.png"
+            "imageUrl": "./img/slider2.png"
         }, {
             "id": 3,
-            "imageUrl": "./img/logo192.png"
-        }, {
-            "id": 4,
-            "imageUrl": "./img/logo192.png"
+            "imageUrl": "./img/slider3.png"
         }
+        , {
+            "id": 4,
+            "imageUrl": "./img/slider3.png"
+        }
+        , {
+            "id": 5,
+            "imageUrl": "./img/slider3.png"
+        }
+        , {
+            "id": 6,
+            "imageUrl": "./img/slider3.png"
+        }
+    
     ]
 
 }
