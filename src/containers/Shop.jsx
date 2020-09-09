@@ -20,7 +20,8 @@ const RubbanShop = () => {
                 <Route path='/login' component={Login} />
                 <Route path='/profile' component={Profile} />
                 <Route path='/products' component={Products} />
-                <Route path='/product/:id' component={SingleProduct} />
+                {/*  <Route path='/product/:id' component={SingleProduct} /> */}
+                   <Route path='/product' component={SingleProduct} />
                 <Route path='/cart' component={Cart} />
                 <Route path='/' exact component={Home} />
                 <Route path='*' exact component={NotFound} />

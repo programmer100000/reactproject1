@@ -2,27 +2,27 @@
     "sliderimgs": [
         {
             "id": 1,
-            "imageUrl": "./img/slider1.png"
+            "imageUrl": "./img/ps4slider.png"
           
         },
         {
             "id":2,
-            "imageUrl": "./img/slider2.png"
+            "imageUrl": "./img/xboxslider.png"
         }, {
             "id": 3,
-            "imageUrl": "./img/slider3.png"
+            "imageUrl": "./img/labtapslider.png"
         }
         , {
             "id": 4,
-            "imageUrl": "./img/slider3.png"
+            "imageUrl": "./img/labtapslider.png"
         }
         , {
             "id": 5,
-            "imageUrl": "./img/slider3.png"
+            "imageUrl": "./img/labtapslider.png"
         }
         , {
             "id": 6,
-            "imageUrl": "./img/slider3.png"
+            "imageUrl": "./img/labtapslider.png"
         }
     
     ]

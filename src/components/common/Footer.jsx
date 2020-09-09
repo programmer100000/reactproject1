@@ -60,12 +60,13 @@ const Footer = () => {
                           با ما
                        </span>
                         </div>
-                        <p className="mr-4 pr-3">
-                            تستی
+                         <p className="mr-4 pr-3">
+                            درباره ما
                         </p>
                         <p className="mr-4 pr-3">
-                            تستی
+                           تماس با ما
                         </p>
+                       
                         <p className="mr-4 pr-3">
                            فرصت های شغلی
                         </p>

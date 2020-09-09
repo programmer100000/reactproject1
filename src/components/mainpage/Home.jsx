@@ -12,18 +12,21 @@ const dispatch = useDispatch();
 const sliderimgs = useSelector((state) => state.slider);
 
 const flickityOptions = {
+  
     wrapAround:true
 }
-// var settings = {
-//     className: "slider variable-width",
-//     arrows: true,
-//     dots: true,
-//     infinite: true,
-//     centerMode: true,
-//     slidesToShow: 3,
-    
-//     variableWidth: true
-//   };
+var settings = {
+    className: "slider variable-width",
+    arrows: true,
+    dots: true,
+    infinite: false,
+    centerMode: true,
+    slidesToShow: 3,
+    variableWidth: true
+
+  };
+
+
 
 const Completionist = () => <span className="text-white time">زمان مزایده به پایان رسید!</span>;
  
@@ -55,14 +58,13 @@ return (
       elementType={'div'} // default 'div'
       options={flickityOptions} // takes flickity options {}
       disableImagesLoaded={false} // default false
-      reloadOnUpdate // default false
+      reloadOnUpdate={true} // default false
       static
-      setGallerySize= {false}
       percentPosition= {true}
       
     >
       {sliderimgs.map((img) => (
-                   <div class="carousel-cell"> 
+                   <div class="carousel-cell d-flex align-items-center justify-content-center"> 
                         <img className="" src={img.imageUrl} />
                         </div>
                     ))}
@@ -91,7 +93,7 @@ return (
             <div className="col-12 top-auction">
          
         <div className="row">
-        <div className='col-md-4 m-0 p-0'>
+        <div className='col-md-4 m-0 p-3'>
                 <div className='auction-img text-center'>
                 <img className="" src='./img/mosayedeh-sample.png' />
                 </div>
@@ -128,7 +130,7 @@ return (
                 <img className="ml-2" src='./img/discounts-heading.png' />
                 <h2 className="text-right m-0">تخفیف ها</h2>
             </div>
-            <div className="col-12 discounts-section p-4">
+            <div className="col-12 discounts-section d-flex align-items-center p-4">
             <div id="multi-item-example"
                         className="carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
 
@@ -140,18 +142,18 @@ return (
                             <div className="carousel-item active">
                                 <div className="row justify-content-around">
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
-                                        <img className="discounts-img w-100" src='./img/takhfif1.png' />
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
                                     </div>
 
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
-                                        <img className="discounts-img w-100" src='./img/takhfif2.png' />
+                                        <img className="discounts-img w-100" src='./img/iphon.png' />
                                     </div>
 
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
-                                        <img className="discounts-img w-100" src='./img/takhfif3.png' />
+                                        <img className="discounts-img w-100" src='./img/airpod.png' />
                                     </div>
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
-                                        <img className="discounts-img w-100" src='./img/takhfif1.png' />
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
                                     </div>
                                 </div>
 
@@ -163,22 +165,20 @@ return (
                             <div className="carousel-item">
                             <div className="row justify-content-around">
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
-                                        <img className="discounts-img w-100" src='./img/takhfif1.png' />
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
                                     </div>
 
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
-                                        <img className="discounts-img w-100" src='./img/takhfif2.png' />
+                                        <img className="discounts-img w-100" src='./img/iphon.png' />
                                     </div>
 
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
-                                        <img className="discounts-img w-100" src='./img/takhfif3.png' />
+                                        <img className="discounts-img w-100" src='./img/airpod.png' />
                                     </div>
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
-                                        <img className="discounts-img w-100" src='./img/takhfif1.png' />
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
                                     </div>
                                 </div>
-
-
                             </div>
 
 
@@ -276,6 +276,73 @@ return (
 
            
         </div>
+        <div className=' row w-100 p-0 my-4  align-items-center m-0 p-0'>
+            <div className="d-flex align-items-center main-heading mb-2">
+                <img className=" new-heading ml-2" src='./img/new-heading.png' />
+                <h2 className="text-right m-0">جدیدترین ها</h2>
+            </div>
+            <div className="col-12 discounts-section d-flex align-items-center p-4">
+            <div id="multi-item-example"
+                        className="carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
+
+                        <a className="btn-floating" href="#multi-item-example" data-slide="next"><i
+                                className="fa fa-chevron-right text-white"></i></a>
+
+                        <div className="carousel-inner" role="listbox">
+
+                            <div className="carousel-item active">
+                            <div className="row justify-content-around">
+                                    <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
+                                    </div>
+
+                                    <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/iphon.png' />
+                                    </div>
+
+                                    <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/airpod.png' />
+                                    </div>
+                                    <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div className="carousel-item">
+                            <div className="row justify-content-around">
+                                    <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
+                                    </div>
+
+                                    <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/iphon.png' />
+                                    </div>
+
+                                    <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/airpod.png' />
+                                    </div>
+                                    <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <a className="btn-floating text-white" href="#multi-item-example" data-slide="prev"><i
+                                className="fa fa-chevron-left"></i></a>
+
+                    </div>
+
+            </div>
+        </div>
+
+
     </div>
 </Fragment>
 );
