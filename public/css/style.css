@@ -46,7 +46,7 @@ a:visited {
 }
 
 h1 {
-    font-size: 1.2rem !important;
+    font-size: 2rem !important;
 }
 
 h2 {
@@ -384,6 +384,15 @@ height: 20px;
 
 
 /* single product-page */
+.product-attributes-top{
+    width: fit-content;
+    border-bottom: 1px solid #000;
+}
+.product-colors{
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 30px;
+}
 .attributes-list{
 list-style-type: circle;
 }
@@ -412,7 +421,7 @@ border-radius: 30px;
         border-radius: 30px;  
     }
     .single-product{
-        background-color: #EFEAEA;
+        background-color: #D8D3D3;
 
     }
     .product-price{
@@ -420,7 +429,7 @@ border-radius: 30px;
     
     }
     .product-img-section{
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, .3);
         border-radius: 30px;
     } 
     .product-rating{
@@ -431,16 +440,49 @@ border-radius: 30px;
         height: 25px;
     width: 25px;
     }
-    .product-link:last-child{
-        width: 30px!important;
-        height: 30px!important;
-    }
+   
     .product-img{
         height: 320px;
     }
     .product-options{
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, .3);
     }
+.product-options-left{
+    background-color: #fff;
+    border-radius: 30px;
+}
+#product-list-tab .list-group-item {
+    border-radius: 30px!important;
+    padding: .5rem 1rem!important;
+}
+#product-list-tab .list-group-item.active {
+    background-color: transparent!important;
+    border-color: #38ADE1!important;
+}
+.product-options-icon{
+    width: 20px;
+    height: 20px;
+}
+.pro-tag-icon{
+    height: 30px!important;
+}
+.product-question-input input{
+border-radius: 30px;
+    box-shadow: none!important;
+    border-color: rgba(56, 173, 225, .3)!important;
+}
+.pro-ques {
+    border-top: 1px solid #ccc;
+}
+.pro-comment {
+    border-bottom: 1px solid #ccc;
+}
 
-
-
+.product-question-name{
+    color: rgb(121, 121, 121);
+}
+#product-tags .item{
+    width: fit-content;
+    background-color:#D8D3D3 ;
+    border-radius: 30px;
+}
