@@ -33,7 +33,9 @@ ul {
     margin: 0;
     padding: 0;
 }
-
+a{
+    color: #212529!important;
+}
 a,
 a:hover,
 a:active,
@@ -64,7 +66,9 @@ h4 {
 
 /* Header */
 .header-bg{
-    background-color: #CE252C;
+    background-color: #CE252C!important;
+    padding: .375rem 3rem!important;
+    border-radius: 30px!important;
 }
 .site-header{
 
@@ -485,4 +489,84 @@ border-radius: 30px;
     width: fit-content;
     background-color:#D8D3D3 ;
     border-radius: 30px;
+}
+.product-category,.product-brand{
+    color: #254350;
+}
+.card-header .fa-circle-o{
+    color: #38ADE1!important;
+}
+table {
+    border-collapse: separate!important;
+    border-spacing: .5rem!important;
+  
+}
+table th,tr{
+    background-color: rgba(0,0,0,.03);
+}
+.product-more-accordeion .card-header {
+  
+  
+    background-color: transparent!important;
+    border-bottom: none!important;
+}
+.more,.less{
+    color: rgb(105, 105, 105)!important;
+}
+.product-more-accordeion .card {
+ 
+    background-color: transparent!important;
+
+    border: none!important;
+}
+.show-more{
+display: block;
+}
+.hide-more{
+    display: none;
+}
+.hide-close{
+    display: none;
+}
+.show-close{
+    display: block;
+}
+#accordion{
+    direction: rtl!important;
+    text-align: right!important;
+}
+.pro-price{
+    background-color: rgba(255,255,255,.9);
+    border-radius: 30px;
+}
+.product-payment-btn {
+    background-color: #CE252C!important;
+    padding: .4rem 1.5rem!important;
+    border-radius: 30px!important;
+    border: none!important;
+    box-shadow: none!important;
+    width: 60%;
+}
+.product-price .card-header{
+    background-color: transparent!important; 
+    /* border: none!important; */
+    border-left: 4px solid rgba(0,0,0,.125)!important;
+   
+    color: black!important;
+}
+.product-price .card-link{
+    color: black!important;
+}
+.product-price .card{
+    background-color: transparent;
+    /* border: none!important; */
+}
+.guarantee-select, .color-select{
+    box-shadow: none!important;
+    outline: 0!important;
+}
+
+.css-yk16xz-control {
+border-radius: 30px!important;
+border-color: rgba(0,0,0,.03);
 }
