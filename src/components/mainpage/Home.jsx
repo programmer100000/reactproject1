@@ -54,21 +54,20 @@ return (
                
 
                 <Flickity
-      className={'main-carousel'} // default ''
-      elementType={'div'} // default 'div'
-      options={flickityOptions} // takes flickity options {}
-      disableImagesLoaded={false} // default false
-      reloadOnUpdate={true} // default false
-      static
-      percentPosition= {true}
-      
-    >
-      {sliderimgs.map((img) => (
-                   <div class="carousel-cell d-flex align-items-center justify-content-center"> 
-                        <img className="" src={img.imageUrl} />
-                        </div>
-                    ))}
-    </Flickity>
+                    className={'main-carousel'} // default ''
+                    elementType={'div'} // default 'div'
+                    options={flickityOptions} // takes flickity options {}
+                    disableImagesLoaded={false} // default false
+                    reloadOnUpdate={true} // default false
+                    static
+                    percentPosition= {true}
+                >
+                    {sliderimgs.map((img) => (
+                                <div class="carousel-cell d-flex align-items-center justify-content-center"> 
+                                        <img className="" src={img.imageUrl} />
+                                        </div>
+                                    ))}
+                </Flickity>
 
       {/* <Slider {...settings}>
       {sliderimgs.map((img) => (
@@ -180,6 +179,7 @@ return (
                                     </div>
                                 </div>
                             </div>
+                            
 
 
                         </div>

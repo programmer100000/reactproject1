@@ -9,6 +9,8 @@ import Login from '../components/user/Login';
 import Cart from '../components/product/Cart';
 import MapPicker from '../components/Mappicker';
 import NotFound from '../components/common/NotFound';
+import ProductCompare from '../components/product/ProductCompare';
+import Search from '../components/product/Search';
 
 
 
@@ -17,6 +19,8 @@ const RubbanShop = () => {
         <Master>
             <Switch>
                 <Route path='/mappicker' component={MapPicker} />
+                <Route path='/compare' component={ProductCompare} />
+                 <Route path='/search' component={Search} />
                 <Route path='/login' component={Login} />
                 <Route path='/profile' component={Profile} />
                 <Route path='/products' component={Products} />

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getSingleProduct } from '../../actions/singleproduct';
 import { isEmpty } from 'lodash';
 import Select from 'react-select';
+import { Link, NavLink } from 'react-router-dom';
 
 // const SingleProduct = ({ match }) => {
 // const dispatch = useDispatch();
@@ -42,36 +43,44 @@ setMore(!getMore);
 setClose(!getClose);
 };
 
-const [items] = React.useState([
-    {
-      label: "گارانتی1",
-      value: "گارانتی1"
-    },
-    { label: "گارانتی2", value: "گارانتی2" }
-  ]);
-  const default1={value:"نوع گارانتی"};
- const handleChange = selectedOption => {
-    console.log(`Option selected:`, selectedOption);
-  };
-  const formatOptionLabel = ({ label,value }) => (
-    <div style={{ display: "flex",borderRadius:"30px"}}>
-      
-      <div style={{ textAlign:"right", marginRight: "10px",borderRadius:"30px" }}>
+const [guaranteeitems] = React.useState([
+{
+label: "گارانتی1",
+value: "گارانتی1"
+},
+{ label: "گارانتی2", value: "گارانتی2" }
+]);
+const default1={value:"نوع گارانتی"};
+const [coloritems] = React.useState([
+{
+label: "رنگ 1",
+value: "رنگ 1"
+},
+{ label: "رنگ 2", value: "رنگ 2" }
+]);
+const default2={value:"تعیین رنگ"};
+const handleChange = selectedOption => {
+console.log(`Option selected:`, selectedOption);
+};
+const formatOptionLabel = ({ label,value }) => (
+<div style={{ display: "flex",borderRadius:"30px"}}>
+
+    <div style={{ textAlign:"right", marginRight: "10px",borderRadius:"30px" }}>
         {value}
-      </div>
     </div>
-  );
-  
+</div>
+);
+
 return(
 <Fragment>
     <div className="container-fluid single-product">
         <div className="container ">
             <div className="row p-4 ">
                 <div className="col-lg-8 product-attributes">
-                    <h1 className="text-right ">
+                    <h1 className="text-right mb-4 ">
                         iphon 11 pro max
                     </h1>
-                    <div className="d-flex  py-3 pl-5  mb-4 product-attributes-top ">
+                    <div className="d-flex  py-2 pl-5  mb-4 product-attributes-top ">
                         <div className="ml-5">
                             <span className="ml-1">برند:</span>
                             <span className="product-brand">iphon</span>
@@ -127,12 +136,12 @@ return(
                         <span>ایفون 11 پرومکس با حافظه 256 بهترین انتخاب برای شماست.</span>
                     </div>
                     <div className="row product-price  p-3 mb-3 align-content-center">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 d-flex flex-column justify-content-center ">
                             {/* <div class="form-group text-right ">
                                 <label for="sel1">نوع گارانتی</label>
                                 <select class="form-control guarantee-select" id="sel1">
                                     <option>گارانتی1</option>
-                                    <option>گارانتی2</option> 
+                                    <option>گارانتی2</option>
                                 </select>
                             </div>
                             <div class="form-group text-right ">
@@ -142,14 +151,10 @@ return(
                                     <option>رنگ 2</option>
                                 </select>
                             </div> */}
-                                <Select
-                                 defaultValue={default1}
-                                    value={items.value}
-                                    onChange={handleChange}
-                                    options={items}
-                                    formatOptionLabel={formatOptionLabel}
-                                
-                                />
+                            <Select defaultValue={default1} value={guaranteeitems.value} onChange={handleChange}
+                                options={guaranteeitems} formatOptionLabel={formatOptionLabel} />
+                            <Select defaultValue={default2} value={coloritems.value} onChange={handleChange}
+                                options={coloritems} formatOptionLabel={formatOptionLabel} />
                         </div>
                         <div className="col-lg-6 d-flex flex-column justify-content-center align-items-end">
                             <div className="d-flex align-items-center justify-content-around mb-3 w-100">
@@ -214,7 +219,7 @@ return(
 
                     </div>
                     <div className="d-flex justify-content-end p-1">
-                        <img className="product-link m-1" src='./img/product-comparison-icon.png' />
+                        <NavLink to="/compare"><img className="product-link m-1" src='./img/product-comparison-icon.png' /></NavLink> 
                         <img className="product-link m-1" src='./img/pro-diagram.png' />
                         <img className="product-link m-1" src='./img/pro-share.png' />
                         <img className="product-link m-1" src='./img/pro-like.png' />
@@ -525,6 +530,75 @@ return(
                             </div>
 
                         </div>
+                    </div>
+                </div>
+
+                <div className=' row w-100 p-0 my-4  align-items-center m-0 p-0'>
+                    <div className="d-flex align-items-center main-heading mb-2">
+                        <img className=" new-heading ml-2" src='./img/new-heading.png' />
+                        <h2 className="text-right m-0">محصولات مشابه</h2>
+                    </div>
+                    <div className="col-12 similar-products-section d-flex justify-content-center align-items-center p-4">
+                        <div id="multi-item-example"
+                            className="carousel slide carousel-multi-item d-flex align-items-center"
+                            data-ride="carousel">
+
+                            <a className="btn-floating similar-products-btn " href="#multi-item-example" data-slide="next"><i
+                                    className="fa fa-chevron-right "></i></a>
+
+                            <div className="carousel-inner" role="listbox">
+
+                                <div className="carousel-item active">
+                                    <div className="row justify-content-around">
+                                        <div
+                                            className="col-md-3 similar-product d-flex align-items-center text-center   p-2">
+                                            <img className="discounts-img w-100" src='./img/glax.png' />
+                                        </div>
+
+                                        <div
+                                            className="col-md-3 similar-product d-flex align-items-center text-center  p-2">
+                                            <img className="discounts-img w-100" src='./img/iphon.png' />
+                                        </div>
+
+                                        <div
+                                            className="col-md-3 similar-product d-flex align-items-center text-center  p-2">
+                                            <img className="discounts-img w-100" src='./img/airpod.png' />
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+
+
+                                <div className="carousel-item">
+                                    <div className="row justify-content-around">
+                                        <div
+                                            className="col-md-3 similar-product d-flex align-items-center text-center  p-2">
+                                            <img className="discounts-img w-100" src='./img/glax.png' />
+                                        </div>
+
+                                        <div
+                                            className="col-md-3 similar-product d-flex align-items-center text-center  p-2">
+                                            <img className="discounts-img w-100" src='./img/iphon.png' />
+                                        </div>
+
+                                        <div
+                                            className="col-md-3 similar-product d-flex align-items-center text-center p-2">
+                                            <img className="discounts-img w-100" src='./img/airpod.png' />
+                                        </div>
+                                       
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                            <a className="btn-floating similar-products-btn " href="#multi-item-example" data-slide="prev"><i
+                                    className="fa fa-chevron-left"></i></a>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
