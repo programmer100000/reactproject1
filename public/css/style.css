@@ -126,7 +126,7 @@ color: #000;
     box-shadow: none!important;
 }
 .search-form img{
-    width: 7%;
+    width: 9%;
     height: 15px;
 }
 .top-nav-store-link{
@@ -389,6 +389,17 @@ height: 20px;
     height: 300px;
     background: #FFED47;
 }
+
+
+
+.BrainhubCarousel,.BrainhubCarousel__trackContainer,.BrainhubCarousel__track{
+    width: 100%!important;
+    height: 100%!important;
+}
+
+
+
+
 /* Home Page End */
 
 
@@ -600,7 +611,7 @@ border-color: transparent!important;
 }
 
 /* product compare */
-.product-compare-header{
+.heading{
     border-bottom: 1px solid rgba(0,0,0,.7);;
 }
 .product-compare-item {
@@ -647,12 +658,106 @@ border: none!important;
 
 /* search page */
 .sidebar-search-form{
-    width: 98%!important;
+    width: 98%!important; 
+     border: 1px solid rgba(0,0,0,.4);
+
 }
 .sidebar-search-form input{
     font-size: 12px;
+  
+
+}
+.form-check-label{
+    font-size: .9rem;
 }
 .form-check-input{
  position: relative!important;
- margin: 0!important;
+ margin: 0 0 0 .3rem!important;
+ 
+}
+.search-accordion img{
+    height: 16px;
+}
+.search-accordion .card-header{
+    background-color: transparent!important;
+    border-bottom: none!important;
+}
+.search-accordion .card{
+    border: none!important;
+    border-radius: 15px;
+}
+.sidebar-item{
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 15px;
+    background-color: #fff;
+}
+.search-accordion .card-link{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.search-accordion .collapsed{
+    border-bottom: none!important;
+}
+.search-sidebar-icon{
+    height: 22px;
+    width: 22px;
+}
+.sidebar-caregory-heading{
+    font-size: 1rem;
+}
+.sidebar-category span,.shearch-cat-link{
+    font-size: .8rem;
+}
+.search-content{
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 15px;
+    background-color: #fff;
+}
+.ordering span:nth-child(2){
+    border:1px solid #38ADE1!important;
+    border-radius: 20px!important;
+}
+.ordering{
+    border-bottom: 1px solid  rgba(0,0,0,.4);
+}
+.product-search-item .fa-circle:nth-child(1){
+color:  black;
+}
+.product-search-item .fa-circle:nth-child(2){
+    color:  gray;
+}
+.product-search-item .fa-circle:nth-child(3){
+        color:  gold;
+}
+.product-search-item .fa-circle:nth-child(4){
+            color:  beige;
+}
+.product-search-item{
+    border: 1px solid rgba(0,0,0,.4);
+ 
+    background-color: transparent;
+}
+.page-item.active .page-link {
+   
+    background-color:#38ADE1!important;
+    border-color: #38ADE1!important;
+}
+.page-item:first-child .page-link {
+ border-radius: 0!important;
+
+}
+.search-rate-img{
+    height: 20px;
+}
+.search-offer-img{
+    height: 40px;
+}
+
+/* card page */
+.card-content{
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 20px;
+}
+.card-img{
+    height: 85%;
+    width: 100%;
 }

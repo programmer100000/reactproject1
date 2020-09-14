@@ -8,7 +8,7 @@ return (
     <div className="container">
         <div className="row">
             <div className="col-md-12 py-5">
-                <h1 className="mb-3 py-2 product-compare-header text-right">مقایسه</h1>
+                <h1 className="mb-3 py-2 heading product-compare-header text-right">مقایسه</h1>
                 <div className="row">
                     <div className="col-md-12">
                     <table class="table p-4 compare-imgs-table">

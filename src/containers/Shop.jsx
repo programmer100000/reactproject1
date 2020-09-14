@@ -11,6 +11,7 @@ import MapPicker from '../components/Mappicker';
 import NotFound from '../components/common/NotFound';
 import ProductCompare from '../components/product/ProductCompare';
 import Search from '../components/product/Search';
+import Card from '../components/product/Card1';
 
 
 
@@ -27,6 +28,7 @@ const RubbanShop = () => {
                 {/*  <Route path='/product/:id' component={SingleProduct} /> */}
                    <Route path='/product' component={SingleProduct} />
                 <Route path='/cart' component={Cart} />
+                  <Route path='/card' component={Card} />
                 <Route path='/' exact component={Home} />
                 <Route path='*' exact component={NotFound} />
                 
