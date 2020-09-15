@@ -11,7 +11,7 @@ return (
                 <h1 className="mb-3 py-2 heading product-compare-header text-right">مقایسه</h1>
                 <div className="row">
                     <div className="col-md-12">
-                    <table class="table p-4 compare-imgs-table">
+                    <table class="table p-4 compare-imgs-table compare-table">
                                                 <tr cellspacing="1">
                                                     <td className="w-25"> </td>
                                                     <td className="w-25"> <img className=" product-compare-img mb-2 h-100 w-100" src='./img/iphon.png' alt="" /></td>
@@ -57,7 +57,7 @@ className="h-100  d-flex flex-column align-items-center justify-content-around">
                                     </div>
                                     <div id="collapseOne" class="collapse show">
                                         <div class="card-body">
-                                            <table class="table ">
+                                            <table class="table compare-table ">
                                                 <tr cellspacing="1">
                                                     <th className=" w-25">ابعاد</th>
                                                     <td className="w-25">185</td>
@@ -102,7 +102,7 @@ className="h-100  d-flex flex-column align-items-center justify-content-around">
                                     </div>
                                     <div id="collapseTwo" class="collapse">
                                         <div class="card-body">
-                                            <table class="table ">
+                                            <table class="table compare-table ">
                                             <tr cellspacing="1">
                                                     <th className=" ">ابعاد</th>
                                                     <td className="">185</td>
@@ -135,7 +135,7 @@ className="h-100  d-flex flex-column align-items-center justify-content-around">
                                     </div>
                                     <div id="collapseThree" class="collapse">
                                         <div class="card-body">
-                                            <table class="table ">
+                                            <table class="table compare-table">
                                             <tr cellspacing="1">
                                                     <th className=" ">ابعاد</th>
                                                     <td className="">185</td>
@@ -167,7 +167,7 @@ className="h-100  d-flex flex-column align-items-center justify-content-around">
                                     </div>
                                     <div id="collapseFour" class="collapse">
                                         <div class="card-body">
-                                            <table class="table ">
+                                            <table class="table compare-table ">
                                             <tr cellspacing="1">
                                                     <th className=" ">ابعاد</th>
                                                     <td className="">185</td>

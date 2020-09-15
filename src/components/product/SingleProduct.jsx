@@ -80,12 +80,12 @@ return(
                     <h1 className="text-right mb-4 ">
                         iphon 11 pro max
                     </h1>
-                    <div className="d-flex  py-2 pl-5  mb-4 product-attributes-top ">
-                        <div className="ml-5">
+                    <div className="d-flex  py-2   mb-4 product-attributes-top ">
+                        <div className="ml-4">
                             <span className="ml-1">برند:</span>
                             <span className="product-brand">iphon</span>
                         </div>
-                        <div>
+                        <div className="d-flex text-right">
                             <span className="ml-1">دسته بندی:</span>
                             <span className="product-category">گوشی موبایل</span>
                         </div>
@@ -125,9 +125,9 @@ return(
                             </div>
                         </ul>
                     </div>
-                    <div className="product-colors py-2 px-4 text-right mb-3">
-                        <span>رنگ بندی: </span>
-                        <span className="mr-4"><i class="fa fa-circle  ml-1"></i>طلائی</span>
+                    <div className="product-colors d-md-flex py-2 px-4 text-right mb-3">
+                        <div>رنگ بندی: </div>
+                        <span className="mr-lg-3"><i class="fa fa-circle  ml-1"></i>طلائی</span>
                         <span className="mr-3"><i class="fa fa-circle ml-1"></i>مشکی</span>
                         <span className="mr-3"><i class="fa fa-circle text-black ml-1"></i>نقره ای</span>
                     </div>
@@ -546,54 +546,66 @@ return(
                             <a className="btn-floating similar-products-btn " href="#multi-item-example" data-slide="next"><i
                                     className="fa fa-chevron-right "></i></a>
 
-                            <div className="carousel-inner" role="listbox">
-
-                                <div className="carousel-item active">
-                                    <div className="row justify-content-around">
-                                        <div
-                                            className="col-md-3 similar-product d-flex align-items-center text-center   p-2">
-                                            <img className="discounts-img w-100" src='./img/glax.png' />
-                                        </div>
-
-                                        <div
-                                            className="col-md-3 similar-product d-flex align-items-center text-center  p-2">
-                                            <img className="discounts-img w-100" src='./img/iphon.png' />
-                                        </div>
-
-                                        <div
-                                            className="col-md-3 similar-product d-flex align-items-center text-center  p-2">
-                                            <img className="discounts-img w-100" src='./img/airpod.png' />
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-
-
-
-                                <div className="carousel-item">
-                                    <div className="row justify-content-around">
-                                        <div
-                                            className="col-md-3 similar-product d-flex align-items-center text-center  p-2">
-                                            <img className="discounts-img w-100" src='./img/glax.png' />
-                                        </div>
-
-                                        <div
-                                            className="col-md-3 similar-product d-flex align-items-center text-center  p-2">
-                                            <img className="discounts-img w-100" src='./img/iphon.png' />
-                                        </div>
-
-                                        <div
-                                            className="col-md-3 similar-product d-flex align-items-center text-center p-2">
-                                            <img className="discounts-img w-100" src='./img/airpod.png' />
-                                        </div>
-                                       
+<div className="carousel-inner d-none d-sm-block " role="listbox">
+                            <div className="carousel-item active ">
+                                <div className="row justify-content-around">
+                                    <div className="col-md-3 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
                                     </div>
 
+                                    <div className="col-md-3 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/iphon.png' />
+                                    </div>
 
+                                    <div className="col-md-3 d-flex align-items-center text-center border border-white p-2">
+                                        <img className="discounts-img w-100" src='./img/airpod.png' />
+                                    </div>
+                                    
                                 </div>
-
-
                             </div>
+                            <div className="carousel-item ">
+                                <div className="row justify-content-around">
+                                        <div className="col-md-3 d-flex align-items-center text-center border border-white p-2">
+                                            <img className="discounts-img w-100" src='./img/glax.png' />
+                                        </div>
+
+                                        <div className="col-md-3 d-flex align-items-center text-center border border-white p-2">
+                                            <img className="discounts-img w-100" src='./img/iphon.png' />
+                                        </div>
+
+                                        <div className="col-md-3 d-flex align-items-center text-center border border-white p-2">
+                                            <img className="discounts-img w-100" src='./img/airpod.png' />
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        <div className="carousel-inner d-block d-sm-none " role="listbox">
+                            <div className="carousel-item active ">
+                            <div className="row justify-content-center">
+                                    <div className="col-5 d-flex align-items-center text-center border border-white p-2 m-1">
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
+                                    </div>
+
+                                    <div className="col-5 d-flex align-items-center text-center border border-white p-2 m-1">
+                                        <img className="discounts-img w-100" src='./img/iphon.png' />
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+
+                            <div className="carousel-item ">
+                            <div className="row justify-content-center">
+                                    <div className="col-5 d-flex align-items-center text-center border border-white p-2 m-1">
+                                        <img className="discounts-img w-100" src='./img/glax.png' />
+                                    </div>
+                                    <div className="col-5 d-flex align-items-center text-center border border-white p-2 m-1">
+                                        <img className="discounts-img w-100" src='./img/iphon.png' />
+                                    </div>  
+                                </div>
+                            </div>  
+                        </div>
                             <a className="btn-floating similar-products-btn " href="#multi-item-example" data-slide="prev"><i
                                     className="fa fa-chevron-left"></i></a>
 

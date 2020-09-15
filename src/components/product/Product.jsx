@@ -33,6 +33,8 @@ const Product = () => {
             localStorage.setItem('productscard', JSON.stringify(card));
         }
 
+        
+
         // user.count += 1;
         // let product1 = [...product];
         // let proId = product1[0];
