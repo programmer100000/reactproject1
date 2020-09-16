@@ -811,12 +811,38 @@ height: 50px;
 }
 .card-products-item{
     border-bottom: 1px solid rgba(0,0,0,.4); 
+    height: 450px;
+    overflow:hidden;
 }
-.card-products-item:nth-child(2){
+.card-products-item:last-child{
     border-bottom: none!important; 
 }
 .card-item-icon{
     width: 15px;
+}
+.card-product-trash{
+width: 30px;
+    text-align: left;
+    border: none;
+    background: transparent;
+    padding:3px 5px!important;
+    border-radius: 5px;
+}
+.card-product-trash img{
+width: 100%;
+}
+.card-item-icon-trash2{
+    display: none;
+}
+.card-product-trash:hover{
+    background-color:#CE252C;
+    
+}
+.card-product-trash:hover .card-item-icon-trash1{
+    display: none!important;
+}
+.card-product-trash:hover .card-item-icon-trash2{
+    display: block!important;
 }
 .card-item-icon-trash{
     width: 20px;
@@ -845,6 +871,17 @@ height: 50px;
 }
 .price-group{
     font-size: 1.3rem;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 @media screen and (max-width: 767px) {
     .card-text{
@@ -921,3 +958,61 @@ section.slideshow div.slideshow-controller span:active{
     text-shadow: 3px 3px 5px #541d82;
     background: #ffc200;
 }
+/* Login Page */
+.forms-content{
+    background-color: #F6F1F1;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 10px;
+}
+.login-form input,.register-form input{
+    border-radius: 30px!important;
+    border: 1px solid rgba(0,0,0,.3);
+}
+.login-btn,.register-btn{
+    border-radius: .4rem!important;
+}
+.forms-heading{
+    font-size: 1.3rem;
+}
+.forms-heading span{
+color: #7777B3!important;
+}
+.forms-heading a{
+    color: #707070;
+    }
+    .confirm-heading{
+        font-size: 1.2rem;
+    }
+    .forms-content input{
+box-shadow: none!important;
+    }
+
+    /* Userinfo Page */
+    .username{
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.3);
+        border-radius: 10px;
+    }
+    .userinfo-icon{
+        height: 30px;
+        width: 26px;
+    }
+    .userinfo-icon:first-child{
+        height: 35px!important;
+    }
+    #userinfo-list-tab .list-group-item.active {
+      border: none;
+        background-color: #38ADE1!important;
+        color: #fff!important;
+    }
+    #userinfo-list-tab .list-group-item{
+        border: none!important;
+        padding: .5rem 1.25rem!important;
+   
+    }
+    .info-heading{
+        border-bottom: 1px solid rgba(0,0,0,.3); 
+    }
+    .personal-info input{
+        border-radius: 10px!important;
+    }

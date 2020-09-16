@@ -3,40 +3,40 @@
         {
             "id": 1,
             "title": "pro1",
-            "description": "توضیح محصول 1....",
+            "price": 425000,
             "imageUrl": "./img/logo192.png",
             "count": 0
         },
         {
             "id":2,
             "title": "pro2",
-            "description": "توضیح محصول 2....",
+            "price": 150000,
             "imageUrl": "./img/logo192.png",
             "count": 0
         }, {
             "id": 3,
             "title": "pro3",
-            "description": "توضیح محصول 3....",
+            "price": 480000,
             "imageUrl": "./img/logo192.png",
             "count": 0
         }, {
             "id": 4,
             "title": "pro4",
-            "description": "توضیح محصول 4....",
+            "price": 530000,
             "imageUrl": "./img/logo192.png",
             "count": 0
         },
         {
             "id": 5,
             "title": "pro5",
-            "description": "توضیح محصول 5....",
+            "price": 300000,
             "imageUrl": "./img/logo192.png",
             "count": 0
         },
         {
             "id": 6,
             "title": "pro6",
-            "description": "توضیح محصول 6....",
+            "price": 200000,
             "imageUrl": "./img/logo192.png",
             "count": 0
         }

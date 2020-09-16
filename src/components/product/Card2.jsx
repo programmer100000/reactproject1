@@ -5,13 +5,15 @@ import { useSelector } from 'react-redux';
 const Card2 = () => {
 
     
-
-    const [getCount, setCount] = useState(1);
+    const [getCount, setCount] = useState();
+    
     var products = useSelector((state) => state.product);
+    console.log(products);
     let card = [];
     var arr = [];
 
     const handleAdd = (product) => {
+        
         setCount(1);
         let product1 = [product.id, product.title, product.description, product.imageUrl, 1];
         let flag = false;
@@ -43,18 +45,56 @@ const Card2 = () => {
 
     };
 
-    const uperCount = (e) => {
+
+   const change=(e,product,i )=>{
+
+       if(e.target.value < 1) {
+            e.target.value ='';
+            // setCount(""); 
+             document.getElementsByClassName("price2")[i].innerHTML=product.price;
+        }
+        else{
+    
+            e.value=e.target.value;
+                // setCount(e.target.value); 
+                var price3 =product.price * e.target.value;
+                document.getElementsByClassName("price2")[i].innerHTML=price3.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                }
+    }
+
+    const uperCount = (e,product,i ) => {
+       
         let input_counter = e.target.parentNode.parentNode.getElementsByClassName('input-counter')[0];
         if(input_counter.value <= 1) input_counter.value = 1;
         input_counter.value = parseInt(input_counter.value) + 1;
+        var x = document.getElementsByClassName("price2")[i].innerText;
+       var y=product.price;
+        var price3 =parseInt(y) * (input_counter.value);
+        
+        document.getElementsByClassName("price2")[i].innerHTML=price3.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+       
     };
 
-    const downerCount = (e) => {
+    const downerCount = (e,product,i) => {
         let input_counter = e.target.parentNode.parentNode.getElementsByClassName('input-counter')[0];
         if(input_counter.value <= 1) input_counter.value = 1;
         else input_counter.value = parseInt(input_counter.value) - 1;
+        var x = document.getElementsByClassName("price2")[i].innerText;
+        var y=product.price;
+         var price3 =parseInt(y) * (input_counter.value);
+       
+         document.getElementsByClassName("price2")[i].innerHTML=price3.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     };
 
+
+const slideUp=(e ,i)=> {
+    var mdiv = document.getElementsByClassName('card-products-item')[i];
+    mdiv.style.transition = "all .5s ease-in-out";
+    mdiv.style.height = "0px";
+    
+    mdiv.style.borderBottom = "none";
+    document.getElementsByClassName('card-products-item')[0].lastElementChild.style.borderBottom = "none";
+}
 
     return (
         <Fragment>
@@ -70,19 +110,23 @@ const Card2 = () => {
                             </div>
                             <div className="row card-products w-100 p-0 m-0 mb-5">
 
-                                {products.map((product) => (
+                                {products.map((product,i) => (
 
 
 
-                                    <div className="col-md-12 card-products-item p-0" key={product.id}>
+                                    <div className="col-md-12 card-products-item p-0" key={i}>
                                         <div className="row w-100 p-4 m-0">
                                             <div className="col-md-3 p-0">
                                                 <img className="card-item-img" src="./img/iphon.png" alt="" />
                                             </div>
                                             <div className="col-md-9 p-0 d-flex flex-column justify-content-between">
-                                                <NavLink to="/">
-                                                    <img className="card-item-icon-trash " src="./img/card-trash.png" alt="" />
-                                                </NavLink>
+                                                <div className="align-left">
+                                                <button className="card-product-trash"  onClick={(e) => { slideUp(e,i)}} >
+                                                    <img className="card-item-icon-trash1 " src="./img/red-trash.png" alt="" />
+                                                    <img className="card-item-icon-trash2 " src="./img/white-trash.png" alt="" />
+                                                </button> 
+                                                </div>
+                                               
 
 
 
@@ -107,24 +151,31 @@ const Card2 = () => {
                                                     <span>موجود در انبار</span>
                                                 </div>
                                                 <div className="d-flex product-count my-3">
-                                                    <button className="count-btn" onClick={(e) => { uperCount(e) }} >
+                                                    <button className="count-btn" onClick={(e) => { uperCount(e,product,i )}} >
                                                         <i class="fa fa-plus ml-1"></i>
                                                     </button>
-                                                    <input type="number" value={getCount}  className="form-control border-0 input-counter"
-                                                        placeholder="1"
+                                                    <input type="number" placeholder="1"  className="form-control border-0 input-counter"
+                                                       
                                                         onChange={(e) => {
-                                                            if(e.target.value <= 1) setCount(1);
-                                                            else setCount(parseInt(e.target.value) );
+                                                            change(e,product,i )
+                                                            // if(e.target.value > 1) {
+                                                            //     setCount(e.target.value); 
+                                                            //     var price3 =product.price * e.target.value;
+                                                            //     document.getElementsByClassName("price2")[i].innerHTML=price3;
+                                                            // }
+                                                            // else {
+                                                            //     setCount(""); 
+                                                            // }
 
                                                         }}
                                                     />
 
-                                                    <button className="count-btn" onClick={(e) => {downerCount(e)}}>
+                                                    <button className="count-btn" onClick={(e) => {downerCount(e,product,i)}}>
                                                         <i class="fa fa-minus ml-1"></i>
                                                     </button>
                                                 </div>
                                                 <div className="price-group d-flex justify-content-end">
-                                                    <span className="ml-1  "> 465000</span>
+                                                    <span className="ml-1 price2 ">{product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                                                     <span>تومان</span>
                                                 </div>
                                             </div>
@@ -203,7 +254,7 @@ const Card2 = () => {
                                         </tr>
                                         <tr>
 
-                                            <td className=" text-center" colspan="2">
+                                            <td className=" text-center" colSpan="2">
                                                 <a type="button" className="btn btn-danger text-white">فرایند پرداخت</a>
                                             </td>
                                         </tr>
