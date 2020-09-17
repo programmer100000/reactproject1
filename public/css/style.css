@@ -66,10 +66,13 @@ h4 {
 
 /* Header */
 .header-bg{
-    background-color: #CE252C!important;
+    background-color:#CE252C ;
+    /* background-image: url("../img/headerbg.svg");
+    background-size: 100% 100%; */
     padding: .375rem 3rem!important;
     border-radius: 30px!important;
 }
+
 .site-header{
 
     height: 120px;
@@ -811,7 +814,12 @@ height: 50px;
 }
 .card-products-item{
     border-bottom: 1px solid rgba(0,0,0,.4); 
-    height: 450px;
+    height: 400px;
+    overflow:hidden;
+}
+.card-product-item{
+    border-bottom: 1px solid rgba(0,0,0,.4); 
+    height: 400px;
     overflow:hidden;
 }
 .card-products-item:last-child{
@@ -819,6 +827,9 @@ height: 50px;
 }
 .card-item-icon{
     width: 15px;
+}
+.card-item-img{
+width: 100%;
 }
 .card-product-trash{
 width: 30px;
@@ -993,13 +1004,14 @@ box-shadow: none!important;
         border: 1px solid rgba(0,0,0,.3);
         border-radius: 10px;
     }
+    .order-icon1,.order-icon2{
+        height: 30px!important;
+    }
     .userinfo-icon{
-        height: 30px;
+        height: 26px;
         width: 26px;
     }
-    .userinfo-icon:first-child{
-        height: 35px!important;
-    }
+   
     #userinfo-list-tab .list-group-item.active {
       border: none;
         background-color: #38ADE1!important;
@@ -1015,4 +1027,38 @@ box-shadow: none!important;
     }
     .personal-info input{
         border-radius: 10px!important;
+    }
+    #userinfo-list-tab .list-group-item .order-icon2,  #userinfo-list-tab .list-group-item .list-icon2,  #userinfo-list-tab .list-group-item .comment-icon2,  #userinfo-list-tab .list-group-item .info-icon2{
+        display: none;
+    }
+    #userinfo-list-tab .active .order-icon1{
+        display: none!important;
+    }
+    #userinfo-list-tab .active .order-icon2{
+        display: block!important;
+    }
+    #userinfo-list-tab .active .list-icon1{
+        display: none!important;
+    }
+    #userinfo-list-tab .active .list-icon2{
+        display: block!important;
+    }
+    #userinfo-list-tab .active .comment-icon1{
+        display: none!important;
+    }
+    #userinfo-list-tab .active .comment-icon2{
+        display: block!important;
+    }
+    #userinfo-list-tab .active .info-icon1{
+        display: none!important;
+    }
+    #userinfo-list-tab .active .info-icon2{
+        display: block!important;
+    }
+    .user-empty-text{
+        font-size: 1.5rem;
+    }
+    /* discounts page */
+    .discount-heading-img{
+        height: 70px;
     }

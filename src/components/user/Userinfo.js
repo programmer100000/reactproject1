@@ -1,7 +1,26 @@
 import React, { Fragment, useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 
 const Userinfo=()=>{
+
+var products = useSelector((state) => state.product);
+const slideUp=(e ,i)=> {
+    var mdiv = document.getElementsByClassName('card-product-item')[i];
+    mdiv.style.transition = "all .5s ease-in-out";
+    mdiv.style.height = "0px";
+    
+    mdiv.style.borderBottom = "none";
+    document.getElementsByClassName('card-product-item')[0].lastElementChild.style.borderBottom = "none";
+}
+const SlideUp=(e ,j)=> {
+    var mdiv = document.getElementsByClassName('card-products-item')[j];
+    mdiv.style.transition = "all .5s ease-in-out";
+    mdiv.style.height = "0px";
+    
+    mdiv.style.borderBottom = "none";
+    document.getElementsByClassName('card-products-item')[0].lastElementChild.style.borderBottom = "none";
+}
 
 return(
 <Fragment>
@@ -18,22 +37,32 @@ return(
                     </div>
                     <div className="userinfo-right mb-4">
                             <div class="list-group  w-100 text-right  " id="userinfo-list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action text-dark active  text-right"
+                                <a class="list-group-item list-group-item-action text-dark active  text-right user-order d-flex align-items-center"
                                     id="list-questions-list" data-toggle="list" href="#product-questions" role="tab"
                                     aria-controls="profile">
-                                        <img className="userinfo-icon ml-2"
-                                        src='./img/orders.svg' />سفارشات</a>
-                                <a class="list-group-item list-group-item-action  text-dark text-right"
+                                        <img className="userinfo-icon order-icon1 ml-2"
+                                        src='./img/orders.svg' />
+                                         <img className="userinfo-icon order-icon2 ml-2"
+                                        src='./img/order-hover.svg' />سفارشات
+                                        </a>
+                                <a class="list-group-item list-group-item-action  text-dark text-right user-list  d-flex align-items-center"
                                     id="list-home-list" data-toggle="list" href="#product-review" role="tab"
-                                    aria-controls="home"><img className="userinfo-icon ml-2"
-                                        src='./img/list.svg' />لیست ها</a>
-                                <a class="list-group-item list-group-item-action  text-dark text-right"
+                                    aria-controls="home"><img className="userinfo-icon list-icon1 ml-2"
+                                        src='./img/favorites.png' />
+                                        <img className="userinfo-icon list-icon2 ml-2"
+                                        src='./img/favorites-hover.png' />علاقه مندی ها</a>
+                                <a class="list-group-item list-group-item-action  text-dark text-right user-message  d-flex align-items-center"
                                     href="#product-comments" data-toggle="list"><img
-                                        className="userinfo-icon ml-2" src='./img/comment.svg' />پیغام ها</a>
-                                <a class="list-group-item list-group-item-action  text-dark text-right"
+                                        className="userinfo-icon comment-icon1 ml-2" src='./img/comment.svg' />
+                                        <img
+                                        className="userinfo-icon comment-icon2 ml-2 " src='./img/comment-hover.svg' />پیغام ها</a>
+                                <a class="list-group-item list-group-item-action  text-dark text-right user-infoo  d-flex align-items-center"
                                     href="#product-specifications" data-toggle="list"><img
-                                        className="userinfo-icon ml-2"
-                                        src='./img/userinfo-boy.svg' />اطلاعات حساب</a>
+                                        className="userinfo-icon info-icon1 ml-2"
+                                        src='./img/userinfo-boy.svg' />
+                                        <img
+                                        className="userinfo-icon info-icon2 ml-2"
+                                        src='./img/userinfo-boy-hover.svg' />اطلاعات حساب</a>
                             
                             </div>
                     </div>
@@ -49,7 +78,120 @@ return(
                             <div class="tab-content user-panel-tab-content pt-0" id="nav-tabContent">
                                 <div class="tab-pane fade show active text-right" id="product-questions" role="tabpanel"
                                     aria-labelledby="list-questions-list">
-                                    <form action="" className="product-questions-form">
+                                         <h3 className="p-3 info-heading">سفارشات</h3>
+                                         <div>
+
+                                         {products.map((product,j) => (
+                                             <div className="col-md-12 card-products-item p-0" key={j} >
+                                        <div className="row w-100 p-4 m-0">
+                                            <div className="col-md-3 p-0">
+                                                <img className="card-item-img" src="./img/iphon.png" alt="" />
+                                            </div>
+                                            <div className="col-md-9 p-0 d-flex flex-column justify-content-between">
+                                                <div className="align-self-end mb-2">
+                                                <button className="card-product-trash"  onClick={(e) => { SlideUp(e,j)}} >
+                                                    <img className="card-item-icon-trash1 " src="./img/red-trash.png" alt="" />
+                                                    <img className="card-item-icon-trash2 " src="./img/white-trash.png" alt="" />
+                                                </button> 
+                                                </div>
+                                               
+
+
+
+                                                <h2 className="text-right mb-3">
+                                                    گوشی iphon 11pro max
+                                                </h2>
+  
+                                 
+                                                <div className="text-right  mb-1">
+                                                    <img className="card-item-icon ml-1" src="./img/user-payment.png" alt="" />
+                                                    <span>پرداخت شد</span>
+                                                </div>
+                                                <div className="text-right  mb-1">
+                                                    <img className="card-item-icon ml-1" src="./img/user-delivery.png" alt="" />
+                                                    <span>دو روز تا زمان ارسال</span>
+                                                </div>
+                                                <div className="d-flex product-count my-3">
+                                                    <button className="count-btn" onClick={(e) => { }} >
+                                                        <i class="fa fa-plus ml-1"></i>
+                                                    </button>
+                                                    <input type="number" placeholder="1"  className="form-control border-0 input-counter"
+                                                       
+                                                       onChange={(e) => {
+                                                          
+                                                           
+                                                           
+                                                        }}
+                                                        />
+
+                                                    <button className="count-btn" onClick={(e) => {}}>
+                                                        <i class="fa fa-minus ml-1"></i>
+                                                    </button>
+                                                </div>
+                                                <div className="price-group d-flex justify-content-end">
+                                                    <span className="ml-1 price2 ">450000</span>
+                                                    <span>تومان</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                      ))}
+                                      </div>
+                                      <div className="d-none">
+                                        <div className="p-5 d-flex align-items-center justify-content-center user-empty-item">
+                                            <i class="fa fa-circle ml-1"></i>
+                                            <span className="user-empty-text ml-5"> سفارشی ثبت نشده است </span>
+                                            <img className="user-empty-img w-25" src="./img/user-order-empty.png" alt="" />
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="tab-pane fade text-right" id="product-review" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                         <h3 className="p-3 info-heading">علاقه مندی ها</h3>
+                                         <div>
+
+                                         {products.map((product,i) => (
+                                             <div className="col-md-12 card-product-item p-0" key={i} >
+                                        <div className="row w-100 p-4 m-0">
+                                            <div className="col-md-3 p-0">
+                                                <img className="card-item-img" src="./img/iphon.png" alt="" />
+                                            </div>
+                                            <div className="col-md-9 p-0 d-flex flex-column justify-content-between">
+                                               <div className="d-flex flex-column">
+                                                    <div className="align-self-end mb-2">
+                                                    <button className="card-product-trash"  onClick={(e) => { slideUp(e,i)}} >
+                                                        <img className="card-item-icon-trash1 " src="./img/red-trash.png" alt="" />
+                                                        <img className="card-item-icon-trash2 " src="./img/white-trash.png" alt="" />
+                                                    </button> 
+                                                    </div>
+                                                    <h2 className="text-right mb-3">
+                                                        گوشی iphon 11pro max
+                                                    </h2>
+                                                </div> 
+                                                <div className="price-group d-flex justify-content-end">
+                                                    <span className="ml-1 price2 ">450000</span>
+                                                    <span>تومان</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+  ))}
+                                </div>
+                                <div className="d-none">
+                                <div className="p-5 d-flex align-items-center justify-content-center user-empty-item">
+                                            <i class="fa fa-circle ml-1"></i>
+                                            <span className="user-empty-text ml-5"> هیچ گزینه ای انتخاب نشده است</span>
+                                            <img className="user-empty-img w-25" src="./img/user-favorite-empty.png" alt="" />
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="tab-pane fade tect-right" id="product-comments" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                         <h3 className="p-3 info-heading text-right">پیام ها</h3>
+                                         <div>
+
+                                     <form action="" className="product-questions-form">
                                         <div class='row p-3'>
 
                                             <div
@@ -75,148 +217,18 @@ return(
                                         </div>
                                     </form>
                                 </div>
-
-                                <div class="tab-pane fade text-right" id="product-review" role="tabpanel"
-                                    aria-labelledby="list-profile-list">
-                                    <span>نقد و بررسی:</span>
-                                    <div id="accordion">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                                    <img className="product-link m-1"
-                                                        src='./img/product-reviewicon.png' />
-                                                    بازده گوشی
-                                                </a>
-                                            </div>
-                                            <div id="collapseOne" class="collapse show">
-                                                <div class="card-body">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat.
-                                                </div>
-                                            </div>
+                                <div className="d-none">
+                                <div className="p-5 d-flex align-items-center justify-content-center user-empty-item ">
+                                            <i class="fa fa-circle ml-1"></i>
+                                            <span className="user-empty-text ml-5"> هیچ پیامی دریافت نشده است</span>
+                                            <img className="user-empty-img w-25" src="./img/user-message-empty.png" alt="" />
                                         </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <a class="collapsed card-link" data-toggle="collapse"
-                                                    href="#collapseTwo">
-                                                    <img className="product-link m-1"
-                                                        src='./img/product-reviewicon.png' />
-                                                    کیفیت دوربین
-                                                </a>
-                                            </div>
-                                            <div id="collapseTwo" class="collapse">
-                                                <div class="card-body">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat.
-                                                </div>
-                                            </div>
                                         </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <a class="collapsed card-link" data-toggle="collapse"
-                                                    href="#collapseThree">
-                                                    <img className="product-link m-1"
-                                                        src='./img/product-reviewicon.png' />
-                                                    رضایت مشتری
-                                                </a>
-                                            </div>
-                                            <div id="collapseThree" class="collapse">
-                                                <div class="card-body">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <a class="collapsed card-link" data-toggle="collapse"
-                                                    href="#collapseThree">
-                                                    <img className="product-link m-1"
-                                                        src='./img/product-reviewicon.png' />
-                                                    میزان نگهداری باطری
-                                                </a>
-                                            </div>
-                                            <div id="collapseThree" class="collapse">
-                                                <div class="card-body">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                    aliquip ex ea commodo consequat.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="tab-pane fade tect-right" id="product-comments" role="tabpanel"
-                                    aria-labelledby="list-profile-list">
-                                    <form action="" className="product-questions-form">
-                                        <div class='row p-3'>
-
-                                            <div
-                                                class=' form-group col-md-2 col-sm-12 p-0 pt-2 text-center d-flex align-items-start justify-content-center '>
-                                                <label className="m-0 ">ثبت نظر:</label>
-
-                                            </div>
-                                            <div class=' form-group col-md col-sm-12 product-question-input p-0 ml-4'>
-                                                <input type='text' class='form-control' placeholder='' />
-                                                <div className="d-flex p-2 mt-3 pro-comment justify-content-between ">
-                                                    <span>
-                                                        <span className="ml-3 product-question-name">کاربر مهمان:</span>
-                                                        <span>چرا گوشی هنگ میکنه؟</span>
-                                                    </span>
-
-                                                    <span className="d-flex">
-                                                        <img className="product-link m-1 ml-3"
-                                                            src='./img/pro-comment-dislike.png' />
-                                                        <img className="product-link m-1"
-                                                            src='./img/pro-comment-like.png' />
-                                                    </span>
-
-
-                                                </div>
-                                                <div className="d-flex p-2 pro-comment justify-content-between ">
-                                                    <span>
-                                                        <span className="ml-3 product-question-name">کاربر مهمان:</span>
-                                                        <span>چون زیاد باهاش کار میکنی</span>
-                                                    </span>
-
-                                                    <span className="d-flex">
-                                                        <img className="product-link m-1 ml-3"
-                                                            src='./img/pro-comment-dislike.png' />
-                                                        <img className="product-link m-1"
-                                                            src='./img/pro-comment-like.png' />
-                                                    </span>
-
-                                                </div>
-                                                <div className="d-flex p-2  pro-comment justify-content-between">
-                                                    <span>
-                                                        <span className="ml-3 product-question-name">کاربر مهمان:</span>
-                                                        <span>چرا گوشی هنگ میکنه؟</span>
-                                                    </span>
-
-                                                    <span className="d-flex">
-                                                        <img className="product-link m-1 ml-3"
-                                                            src='./img/pro-comment-dislike.png' />
-                                                        <img className="product-link m-1"
-                                                            src='./img/pro-comment-like.png' />
-                                                    </span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
                                 </div>
                                 <div class="tab-pane fade text-right" id="product-specifications" role="tabpanel"
                                     aria-labelledby="list-profile-list">
                                     <h3 className="p-3 info-heading">اطلاعات شخصی</h3>
-                                    
+                                   
                                     <div className="row w-100 p-0 m-0 personal-info">
                                         <div className="col-md-6">
                                         <div class="form-group mb-3">

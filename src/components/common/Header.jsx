@@ -28,7 +28,7 @@ const Header = () => {
                     </Link>
             </li>
             <li className="px-md-1 px-lg-2 pb-3 py-2">
-            <Link to='/' className="text-white" >
+            <Link to='/discounts' className="text-white" >
                     <img src="./img/discounts.png" alt=""/>
                     <span>تخفیف ها</span>
                     </Link>
@@ -42,7 +42,7 @@ const Header = () => {
             <header>
                 <div className="row header-bg">
                     
-                <div className='container  site-header'>
+                <div className='container  site-header p-0'>
                     <div className="row w-100 m-0 p-0 pt-1 top-nav align-content-start">
                         <div className="col-12 d-flex align-items-center justify-content-start m-0 p-0 ">
                            <div className="col-9 top-nav-logo text-right p-0">
@@ -62,7 +62,10 @@ const Header = () => {
                                     ورود به حساب کاربری
                                 </span>
                             </NavLink>
-                                <img className="top-nav-store-link mr-2" src='./img/store1.png' />
+                            <NavLink to="/card2">
+                                <img className="top-nav-store-link mr-2" src='./img/store1.png' />             
+                            </NavLink>
+                           
                             </div>
                            </div>
                         </div>

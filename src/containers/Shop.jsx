@@ -17,6 +17,7 @@ import ProductCompare from '../components/product/ProductCompare';
 import Search from '../components/product/Search';
 import Card from '../components/product/Card1';
 import Card2 from '../components/product/Card2';
+import Discounts from '../components/product/Discounts';
 
 
 
@@ -38,6 +39,7 @@ const Shop = () => {
                    <Route path='/product' component={SingleProduct} />
                 <Route path='/cart' component={Cart} />
                   <Route path='/card' component={Card} />
+                  <Route path='/discounts' component={Discounts} />
                    <Route path='/card2' component={Card2} />
                 <Route path='/' exact component={Home} />
                 {/* <Route path='*' exact component={NotFound} /> */}

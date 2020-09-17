@@ -19,26 +19,6 @@
             "price": 480000,
             "imageUrl": "./img/logo192.png",
             "count": 0
-        }, {
-            "id": 4,
-            "title": "pro4",
-            "price": 530000,
-            "imageUrl": "./img/logo192.png",
-            "count": 0
-        },
-        {
-            "id": 5,
-            "title": "pro5",
-            "price": 300000,
-            "imageUrl": "./img/logo192.png",
-            "count": 0
-        },
-        {
-            "id": 6,
-            "title": "pro6",
-            "price": 200000,
-            "imageUrl": "./img/logo192.png",
-            "count": 0
         }
     ]
 
