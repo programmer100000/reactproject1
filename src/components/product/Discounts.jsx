@@ -125,8 +125,8 @@ const Discounts = () => {
                             </div>
 
                         </div>
-                    </div>
-                    <div className="row w-100 p-0 m-0 p-0">
+               
+                   
                       
 
                       
@@ -238,8 +238,8 @@ const Discounts = () => {
                             </div>
 
                         </div>
-                    </div>
-                    <div className="row w-100 p-0 m-0 p-0">
+                    
+                  
                       
 
                       

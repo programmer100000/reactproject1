@@ -72,17 +72,43 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
         </span>;
   }
 };
+
+
+useEffect(() => {
+    // var lastPrev =document.getElementsByClassName('arSlide')[0];
+    // console.log(lastPrev);
+    var list = document.getElementsByClassName("arSlider")[0];
+    console.log(list);
+  var a=list.childNodes[0];
+    console.log(a);
+    console.log('2123123');
+    // let prev = document.getElementsByClassName('arSlide')[1];
+    // let active = document.getElementsByClassName('arSlide')[2];
+    // let next = document.getElementsByClassName('arSlide')[3];
+    // let lastNext = document.getElementsByClassName('arSlide')[4];
+}, []);
+const goLeft = (e) => {
+   
+
+   
+};
+const goRight = (e) => {
+  
+   
+};
+
+
 return (
 <Fragment>
     <div className='container p-0 my-4'>
-        <div className="row p-0 m-0 special-offer-section">
+        <div className="row p-0 m-0 special-offer-section mb-5">
             <div className="col-12 ">
                 <div className="d-flex align-items-center main-heading special-offer-heading mb-2">
                 <img className="ml-2" src='./img/special-offer-header.png' />
                 <h2 className="text-right m-0">پیشنهاد ویژه</h2>
                 </div>
               
-               <Slideshow
+               {/* <Slideshow
   interval={5000}
   images={[
     "./img/ps4slider.png",
@@ -91,7 +117,23 @@ return (
     "./img/ps4slider.png",
   "./img/ps4slider.png"
   ]}
-/>
+/> */}
+<div class="sliderWrapper">
+    <div id="slider1" className="arSlider">
+       
+        {sliderimgs.map((img,i) => (
+                                <div className="arSlide " key={i}>
+                                    <img src={img.imageUrl} alt=""/>
+                                </div>   
+                                    ))}
+        <button className="goLeft">
+            <i className="fa fa-chevron-left" onClick={(e) => { goLeft(e)}}></i>
+        </button>
+        <button className="goRight">
+            <i className="fa fa-chevron-right" onClick={(e) => { goRight(e)}}></i>
+        </button>
+    </div>
+</div>
                 {/* <Flickity
                     className={'main-carousel'} // default ''
                     elementType={'div'} // default 'div'

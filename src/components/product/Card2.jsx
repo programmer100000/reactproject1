@@ -92,8 +92,14 @@ const slideUp=(e ,i)=> {
     mdiv.style.transition = "all .5s ease-in-out";
     mdiv.style.height = "0px";
     
-    mdiv.style.borderBottom = "none";
+    mdiv.style.borderColor= "transparent";
     document.getElementsByClassName('card-products-item')[0].lastElementChild.style.borderBottom = "none";
+    if(i>0){
+        document.getElementsByClassName('card-products-item')[i-1].style.borderBottom = "none";
+        document.getElementsByClassName('card-products-item')[i-1].style.borderColor= "transparent";
+    }
+
+ 
 }
 
     return (

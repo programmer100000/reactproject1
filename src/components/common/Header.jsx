@@ -9,10 +9,22 @@ const Header = () => {
 
     const returnMainNavValue = (
         <ul className="m-0 ">
+           <li className="px-md-1 px-lg-2 pb-3 py-2">
+                <Link to='/' className="text-white d-flex" >
+                <span>
+                       <img src="./img/category.png" alt="" className="ml-1" />
+                   دسته بندی 
+                
+                   </span>
+                         <span className="d-none d-sm-block mr-1">|</span>
+                
+                </Link>
+            </li>
             <li className="px-md-1 px-lg-2 pb-3 py-2">
-                <Link to='/' className="text-white" >
-                    <img src="./img/category.png" alt="" className="ml-1" />
-                    <span>دسته بندی | <img src="./img/auction.png" alt=""/>سالن مزایده</span>
+                <Link to='/' className="text-white" > 
+                
+                   <span>
+                     <img src="./img/auction.png" alt=""/>سالن مزایده</span>
                     </Link>
             </li>
             <li className="px-md-1 px-lg-2 pb-3 py-2">
@@ -43,14 +55,14 @@ const Header = () => {
                 <div className="row header-bg">
                     
                 <div className='container  site-header p-0'>
-                    <div className="row w-100 m-0 p-0 pt-1 top-nav align-content-start">
-                        <div className="col-12 d-flex align-items-center justify-content-start m-0 p-0 ">
-                           <div className="col-9 top-nav-logo text-right p-0">
+                    <div className="row w-100 m-0 p-0  top-nav align-content-start">
+                        <div className="col-12 d-flex  justify-content-start m-0 p-0 ">
+                           <div className="col-4 p-0 col-md-9 top-nav-logo text-right p-0">
                                <a className="w-20" href='#' >
                                     <img className="w-20" src='./img/logo192.png' />
                                 </a>
                            </div>
-                           <div className="col-3 p-md-0   ">
+                           <div className="col-8 p-0 col-md-3 p-md-0 d-flex justify-content-center   ">
                             
                             <div className="top-nav-login-store d-flex  align-items-center justify-content-end">
                             <NavLink to='/login' className='top-nav-login border border-white px-2 pb-1  d-flex align-items-center'>
@@ -71,7 +83,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="row w-100 m-0 p-0 main-nav align-content-end " >
-                        <div className='col-9 m-0 p-0 main-nav-menu d-flex text-right '>
+                        <div className='col-4  col-md-9 m-0 p-0 main-nav-menu d-flex text-right '>
                             <button
                                 className="mob-main-nav-menu-btn d-block d-sm-none p-1 border-0 text-white"
                                 onClick={mainNavOnClick}
@@ -82,7 +94,7 @@ const Header = () => {
                                 {returnMainNavValue}
                             </div>
                         </div>
-                        <div className='col-3 m-0 p-0  d-flex justify-content-end'>
+                        <div className='col-8 col-md-3 m-0 p-0  d-flex justify-content-end '>
                         <div className="search-form d-flex border border-white align-items-center p-1  ">
                             <input type="text" className="form-control border-0 text-white" />
                                     <img className="" src='./img/search1.png' />

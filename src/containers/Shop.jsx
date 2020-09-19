@@ -42,7 +42,7 @@ const Shop = () => {
                   <Route path='/discounts' component={Discounts} />
                    <Route path='/card2' component={Card2} />
                 <Route path='/' exact component={Home} />
-                {/* <Route path='*' exact component={NotFound} /> */}
+                <Route path='*' exact component={NotFound} />
                 
             </Switch>
         </Master>

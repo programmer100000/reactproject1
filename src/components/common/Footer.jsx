@@ -79,8 +79,9 @@ const Footer = () => {
             </div>
             <div className="row bottom-footer-bg p-0 m-0">
             <div className='container bottom-footer'>
-            
-                <div className="row w-100 m-0 px-0 py-2 pt-5 ">
+            <div class="row">
+            <div class="col-8 m-0">
+              <div className="row w-100 m-0 px-0 py-2 pt-5 ">
                    <div className="col-12 m-0 p-0 d-flex footer-item align-items-center">
                        <img src="./img/phone.png" alt="" className="phone-img ml-2" />
                        <span className="text-white">
@@ -110,6 +111,12 @@ const Footer = () => {
                    
                    </div>
                 </div>
+              
+            </div>
+                <div class="col-4 m-0 d-flex align-content-center">
+                 <img src="./img/footer-bg-left.svg" alt="" className="w-100 " />
+                </div>
+            </div>
             </div>
             </div>
            
