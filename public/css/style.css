@@ -269,16 +269,17 @@ background-color: #C6C4C5;
 }
 .phone-img{
 height: 20px;
+width: 25px;
 }
 .email-img{
    height: 15px;
+   width: 25px;
 }
 .sotialmedia-img{
     height: 40px;
+    width: 200px;
 }
-@media only screen and (max-width: 768px) {
-    
-}
+
 /* Footer End */
 /* Home Page  */
 .mozayede-section,
@@ -296,12 +297,20 @@ height: 20px;
 }
 .categories{
     background-color: #FFBCC9;
+    height: 110px;
 }
 .category-img{
     width: 50px;
 }
-
-
+.carou-inner {
+    height: 100%;
+}
+.carou{
+    height: 250px;
+}
+.cat-carou{
+    height: 100%;
+}
 /* 2222222222222222222222222222222222222222222222222222222222222222222222222222 */
 .variable-width {
     background: #CE252C;
@@ -547,7 +556,7 @@ border-radius: 30px;
     border-spacing: .5rem!important;
   
 }
-.compare-table th,tr{
+.compare-table th,.compare-table tr{
     background-color: rgba(0,0,0,.03);
 }
 .product-more-accordeion .card-header {
@@ -831,7 +840,7 @@ height: 50px;
 .card-table tr{
     background-color: transparent!important;
 }
-.card-table th, tr {
+.card-table th,.card-table tr {
     border: 3px solid #798088!important;
 }
 .card-products{
@@ -970,7 +979,7 @@ img{
     z-index:-1; 
     visibility: hidden;
 }
-.active{
+.active1{
     width: 400px;
     height:200px;
     left:calc(25%);
@@ -1182,3 +1191,84 @@ box-shadow: none!important;
         } 
      
     }
+    /* payment page */
+    .payment{
+        background-color: #F6F1F1;
+        border: 1px solid rgba(0,0,0,.3);
+        border-radius: 10px;
+    } 
+    .payment-form input{
+
+box-shadow: none!important;
+    }
+    .payment-form select{
+
+        box-shadow: none!important;
+            }
+    .payment-submit {
+        border-top: 1px solid rgba(0,0,0,.3);  
+    }
+    .payment-submit .btn{
+        height: 40px;
+    }
+    .peyment-edite-loc{
+        font-size: .8rem;
+    }
+    .payment-icon{
+        width: 23px;
+        height: 23px;
+    }
+    .payment-confirm-name{
+        font-size: .9rem;
+    }
+    .payment-confirm-address{
+        font-size: .8rem;
+    }
+    .payment-confirm-edite{
+        font-size: .7rem;
+    }
+    .payment-confirm-product-icon{
+        width: 30px;
+        height: 30px;
+    }
+    .payment-confirm-product{
+        font-size: 1.3rem;
+    }
+    .return-to-cart{
+        color: rgba(35, 98, 126, 0.938)!important;
+    }
+    .return-to-cart i{
+        font-size: 1.2rem;
+    }
+    .return-to-cart span{
+        font-size: .8rem;
+       
+    }
+    .payment-fast-sending{
+        font-size: .7rem;
+    }
+    .payment-sending-time{
+
+    }
+    .payment-table{
+    background-color: #F6F1F1;
+
+    
+}
+.payment-location{
+    height: 400px;
+}
+.payment-tab-content{
+    border: 1px solid rgba(0,0,0,.3);
+}
+.payment-tab-heading{
+    border: 1px solid rgba(0,0,0,.3); 
+}
+.payment-tab-heading .active{
+    background-color: #38ADE1!important;
+        color: #fff!important;
+        border: none!important;
+}
+.payment-tab-heading .nav-item {
+    margin-bottom: -3px!important;
+}

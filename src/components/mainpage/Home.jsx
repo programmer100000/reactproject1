@@ -74,19 +74,13 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 
-useEffect(() => {
-    // var lastPrev =document.getElementsByClassName('arSlide')[0];
-    // console.log(lastPrev);
-    var list = document.getElementsByClassName("arSlider")[0];
-    console.log(list);
-  var a=list.childNodes[0];
-    console.log(a);
-    console.log('2123123');
-    // let prev = document.getElementsByClassName('arSlide')[1];
-    // let active = document.getElementsByClassName('arSlide')[2];
-    // let next = document.getElementsByClassName('arSlide')[3];
-    // let lastNext = document.getElementsByClassName('arSlide')[4];
-}, []);
+// useEffect(() => {
+//     var list = document.getElementsByClassName("arSlider")[0];
+//     console.log(list);
+//   var a=list.getElementsByClassName("arSlide");
+//     console.log(a);
+//     console.log('2123123');
+// }, []);
 const goLeft = (e) => {
    
 
@@ -108,7 +102,7 @@ return (
                 <h2 className="text-right m-0">پیشنهاد ویژه</h2>
                 </div>
               
-               {/* <Slideshow
+               <Slideshow
   interval={5000}
   images={[
     "./img/ps4slider.png",
@@ -117,10 +111,9 @@ return (
     "./img/ps4slider.png",
   "./img/ps4slider.png"
   ]}
-/> */}
-<div class="sliderWrapper">
+/>
+{/* <div class="sliderWrapper">
     <div id="slider1" className="arSlider">
-       
         {sliderimgs.map((img,i) => (
                                 <div className="arSlide " key={i}>
                                     <img src={img.imageUrl} alt=""/>
@@ -133,7 +126,7 @@ return (
             <i className="fa fa-chevron-right" onClick={(e) => { goRight(e)}}></i>
         </button>
     </div>
-</div>
+</div> */}
                 {/* <Flickity
                     className={'main-carousel'} // default ''
                     elementType={'div'} // default 'div'
@@ -212,12 +205,12 @@ return (
             </div>
             <div className="col-12 discounts-section d-flex align-items-center p-4">
             <div id="multi-item-example"
-                        className="carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
+                        className="carou carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
 
                         <a className="btn-floating" href="#multi-item-example" data-slide="next"><i
                                 className="fa fa-chevron-right text-white"></i></a>
 
-                        <div className="carousel-inner d-none d-sm-block " role="listbox">
+                        <div className="carou-inner carousel-inner d-none d-sm-block " role="listbox">
                             <div className="carousel-item active ">
                                 <div className="row justify-content-around">
                                     <div className="col-md-2 d-flex align-items-center text-center border border-white p-2">
@@ -348,18 +341,18 @@ breakpoints={{
 
         <div className='categories-section my-4'>
             <div className="row p-0 m-0 categories py-3 my-4">
-                <div className="col-md-2 col-3 p-0 pr-1 d-flex align-items-center justify-content-center text-center">
+                <div className="h-100 col-md-2 col-3 p-0 pr-1 d-flex align-items-center justify-content-center text-center">
                     <span className=' mx-0 my-auto  '>دسته بندی ها</span>
                 </div>
-                <div className="col-md-10 col-9 p-sm-2">
+                <div className="col-md-10 col-9 p-sm-2 h-100">
 
                     <div id="multi-item-example"
-                        className="carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
+                        className=" cat-carou carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
 
                         <a className="btn-floating" href="#multi-item-example" data-slide="next"><i
                                 className="fa fa-chevron-right text-dark"></i></a>
 
-                        <div className="carousel-inner d-none d-sm-block " role="listbox">
+                        <div className="h-100 carousel-inner d-none d-sm-block " role="listbox">
                             <div className="carousel-item active">
                                 <div className="row">
                                     <div className="col-md-2 text-center">
@@ -463,12 +456,12 @@ breakpoints={{
             </div>
             <div className="col-12 discounts-section d-flex align-items-center p-4">
             <div id="multi-item-example"
-                        className="carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
+                        className="carou carousel slide carousel-multi-item d-flex align-items-center" data-ride="carousel">
 
                         <a className="btn-floating" href="#multi-item-example" data-slide="next"><i
                                 className="fa fa-chevron-right text-white"></i></a>
 
-<div className="carousel-inner d-none d-sm-block " role="listbox">
+<div className="carou-inner carousel-inner d-none d-sm-block " role="listbox">
 
 <div className="carousel-item active ">
     <div className="row justify-content-around">

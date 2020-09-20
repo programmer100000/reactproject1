@@ -61,6 +61,8 @@ export default function Slideshow({images=[], interval=3000}){
     }
 
     return (
+
+        
         <section className="slideshow">
             <div className="slide-holder">
                 <section className="slide previous-slide">
@@ -73,7 +75,6 @@ export default function Slideshow({images=[], interval=3000}){
                     <div style={nextSlideStyle} className="slide-thumbnail"></div>
                 </section>
             </div>
-
             <div className="slideshow-controller">
                 <span onClick={previous}>Previous</span>
                 <span onClick={next}>Next</span>

@@ -17,6 +17,9 @@ import ProductCompare from '../components/product/ProductCompare';
 import Search from '../components/product/Search';
 import Card from '../components/product/Card1';
 import Card2 from '../components/product/Card2';
+import Payment1 from '../components/product/Payment1';
+import Payment2 from '../components/product/Payment2';
+import Location from '../components/product/Location';
 import Discounts from '../components/product/Discounts';
 
 
@@ -39,8 +42,11 @@ const Shop = () => {
                    <Route path='/product' component={SingleProduct} />
                 <Route path='/cart' component={Cart} />
                   <Route path='/card' component={Card} />
+                    <Route path='/location' component={Location} />
                   <Route path='/discounts' component={Discounts} />
                    <Route path='/card2' component={Card2} />
+                   <Route path='/payment1' component={Payment1} />
+                    <Route path='/payment2' component={Payment2} />
                 <Route path='/' exact component={Home} />
                 <Route path='*' exact component={NotFound} />
                 
