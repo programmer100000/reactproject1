@@ -17,7 +17,7 @@ return (
                             <div className="col-md-5">
                                 <div className="form-group text-right">
                                     <label for="sel1">استان:</label>
-                                    <select className="form-control" id="sel1">
+                                    <select className="form-control" id="sel1" >
                                         <option>تهران</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -26,9 +26,9 @@ return (
                                 </div>
                             </div>
                             <div className="col-md-5">
-                                <div className="form-group text-right">
+                                <div className="form-group text-right" >
                                         <label for="sel2">شهر:</label>
-                                        <select className="form-control" id="sel2">
+                                        <select className="form-control" id="sel2" >
                                             <option>تهران</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -41,7 +41,7 @@ return (
                             <div className="col-md-5">
                                 <div className="form-group text-right">
                                     <label for="sel3">محله:</label>
-                                    <select className="form-control" id="sel3">
+                                    <select className=" selectpicker show-menu-arrow form-control"  id="sel3" title="محله را انتخاب کنید">
                                         <option>انقلاب</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -121,7 +121,7 @@ return (
                         </div>
                         <div className="row w-100 p-0 m-0 payment-submit justify-content-center">
                             <div className="col-md-8 text-center pt-3 ">
-                                <NavLink to="/" type="button" className="w-50 text-white  btn btn-danger">
+                                <NavLink to="/payment2" type="button" className="w-50 text-white  btn btn-danger">
 تایید و ثبت درخواست
                                 </NavLink>
                             </div>

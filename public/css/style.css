@@ -15,7 +15,7 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    background-color:#D8D3D3!important;
+    background-color:#eae7e7!important;
 }
 
 @media screen and (max-width: 768px) {
@@ -63,7 +63,9 @@ h4 {
     font-size: 0.8rem !important;
 }
 
-
+img{
+    width: unset;
+}
 /* Header */
 .header-bg{
     /* background-color:#CE252C ; */
@@ -88,7 +90,7 @@ h4 {
 }
 
 .top-nav-logo a img {
-    width: 50px;
+    width: 50px!important;
 }
 .top-nav-links{
 flex-direction: column;
@@ -111,7 +113,7 @@ color: #000;
 
 }
 .top-nav-login button img{
-    width: 15px;
+    width: 15px!important;
 }
 .search-form{
     border-radius: 10px;
@@ -132,8 +134,9 @@ color: #000;
 }
 .search-form img{
     width: 9%;
-    height: 15px;
+  
 }
+
 .top-nav-store-link{
     width: 20px;
     height: 20px;
@@ -737,7 +740,7 @@ border: none!important;
     border-bottom: none!important;
 }
 .search-sidebar-icon{
-    height: 22px;
+    height: 22px!important;
     width: 22px;
 }
 .sidebar-caregory-heading{
@@ -859,6 +862,7 @@ height: 50px;
 }
 .card-item-icon{
     width: 15px;
+    height: auto;
 }
 .card-item-img{
 height: 100%;
@@ -1202,9 +1206,21 @@ box-shadow: none!important;
 box-shadow: none!important;
     }
     .payment-form select{
-
+border-radius: .3rem!important;
         box-shadow: none!important;
+        border: 1px solid rgba(0,0,0,.3);
             }
+.payment-form select:focus{
+               
+                        border: 1px solid rgba(0,0,0,.3)!important;
+                            }
+.payment-receiver-info input{
+    border: 1px solid rgba(0,0,0,.3)!important;
+    box-shadow: none!important;
+}
+  .payment-form input{
+    border: 1px solid rgba(0,0,0,.3)!important;
+  }
     .payment-submit {
         border-top: 1px solid rgba(0,0,0,.3);  
     }
@@ -1271,4 +1287,8 @@ box-shadow: none!important;
 }
 .payment-tab-heading .nav-item {
     margin-bottom: -3px!important;
+}
+.location-submit,.payment-submit{
+    box-shadow: none!important;
+    outline: 0!important;
 }

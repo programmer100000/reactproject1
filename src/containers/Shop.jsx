@@ -20,6 +20,7 @@ import Card2 from '../components/product/Card2';
 import Payment1 from '../components/product/Payment1';
 import Payment2 from '../components/product/Payment2';
 import Location from '../components/product/Location';
+import Location1 from '../components/product/Location1';
 import Discounts from '../components/product/Discounts';
 
 
@@ -43,6 +44,7 @@ const Shop = () => {
                 <Route path='/cart' component={Cart} />
                   <Route path='/card' component={Card} />
                     <Route path='/location' component={Location} />
+                         <Route path='/location1' component={Location1} />
                   <Route path='/discounts' component={Discounts} />
                    <Route path='/card2' component={Card2} />
                    <Route path='/payment1' component={Payment1} />

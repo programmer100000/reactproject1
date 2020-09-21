@@ -18,7 +18,10 @@ return (
                                 <div className="search-form sidebar-search-form m-0 d-flex  align-items-center p-1  ">
                                     <input type="text" className="form-control  border-0 "
                                         placeholder="جستجو در نتایج" />
-                                    <img className="" src='./img/search.png' />
+                                          
+                            <img type="button" className="" src='./img/search.png' />
+                              
+                                    
                                 </div>
                             </div>
                             <div className="text-right border-bottom border-dark p-2">
@@ -186,7 +189,7 @@ return (
                                         <div className="card-header p-0">
                                             <a className="card-link d-flex align-items-center p-3" data-toggle="collapse"
                                                 href="#collapseOne">
-                                                <img className=" product-compare-img ml-2 " src='./img/bottom-icon.png'
+                                                <img className="search-sidebar-icon  ml-2 p-1" src='./img/bottom-icon.png'
                                                     alt="" />
                                                 <span>شبکه ارتباطی</span>
 
@@ -233,7 +236,7 @@ return (
                                         <div className="card-header p-0">
                                             <a className="card-link d-flex align-items-center p-3" data-toggle="collapse"
                                                 href="#collapse2">
-                                                <img className=" product-compare-img ml-2 " src='./img/bottom-icon.png'
+                                                <img className="search-sidebar-icon ml-2 p-1" src='./img/bottom-icon.png'
                                                     alt="" />
                                                 <span>رزولوشن</span>
 
@@ -272,7 +275,7 @@ return (
                                         <div className="card-header p-0">
                                             <a className="card-link d-flex align-items-center p-3" data-toggle="collapse"
                                                 href="#collapse3">
-                                                <img className=" product-compare-img ml-2 " src='./img/bottom-icon.png'
+                                                <img className="search-sidebar-icon ml-2 p-1" src='./img/bottom-icon.png'
                                                     alt="" />
                                                 <span>مقدار RAM</span>
 
@@ -312,7 +315,7 @@ return (
                                         <div className="card-header p-0">
                                             <a className="card-link d-flex align-items-center p-3" data-toggle="collapse"
                                                 href="#collapse4">
-                                                <img className=" product-compare-img ml-2 " src='./img/bottom-icon.png'
+                                                <img className=" search-sidebar-icon ml-2 p-1" src='./img/bottom-icon.png'
                                                     alt="" />
                                                 <span>نسخه سیستم عامل</span>
 
@@ -363,9 +366,11 @@ return (
                     <div className="row w-100 p-0 m-0 p-0">
                         <div className="col-lg-3 col-md-6 p-0">
                             <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end  product-search-item-top align-items-center">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
                                     <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -393,7 +398,7 @@ return (
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -427,8 +432,10 @@ return (
                         <div className="col-lg-3 col-md-6 p-0">
                             <div className=" product-search-item p-1">
                                 <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
                                     <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -450,107 +457,11 @@ return (
                         </div>
                         <div className="col-lg-3 col-md-6 p-0">
                             <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end  product-search-item-top align-items-center">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
                                     <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                <img className="w-100" src="./img/iphon.png " alt="" />
-                                <div>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                </div>
-                                <p className="my-1 text-right">
-                                    گوشی سامسونگ
-                                </p>
-
-                                <div className="d-flex text-right my-2">
-                                    <span className="ml-1 "> 465000</span>
-                                    <span>تومان</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div className="row w-100 p-0 m-0 p-0">
-                        <div className="col-lg-3 col-md-6 p-0">
-                            <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end">
-                                    <span>4.5</span>
-                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                <img className="w-100" src="./img/iphon.png " alt="" />
-                                <div>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                </div>
-                                <p className="my-1 text-right">
-                                    گوشی سامسونگ
-                                </p>
-
-                                <div className="d-flex text-right my-2">
-                                    <span className="ml-1 "> 465000</span>
-                                    <span>تومان</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="col-lg-3 col-md-6 p-0">
-                            <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end">
-                                    <span>4.5</span>
-                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                <img className="w-100" src="./img/iphon.png " alt="" />
-                                <div>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                </div>
-                                <p className="my-1 text-right">
-                                    گوشی سامسونگ
-                                </p>
-
-                                <div className="d-flex text-right my-2">
-                                    <span className="ml-1 "> 465000</span>
-                                    <span>تومان</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="col-lg-3 col-md-6 p-0">
-                            <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end">
-                                    <span>4.5</span>
-                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                <img className="w-100" src="./img/iphon.png " alt="" />
-                                <div>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                </div>
-                                <p className="my-1 text-right">
-                                    گوشی سامسونگ
-                                </p>
-
-                                <div className="d-flex text-right my-2">
-                                    <span className="ml-1 "> 465000</span>
-                                    <span>تومان</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="col-lg-3 col-md-6 p-0">
-                            <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end">
-                                    <span>4.5</span>
-                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -574,9 +485,11 @@ return (
                     <div className="row w-100 p-0 m-0 p-0">
                         <div className="col-lg-3 col-md-6 p-0">
                             <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
                                     <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -598,9 +511,11 @@ return (
                         </div>
                         <div className="col-lg-3 col-md-6 p-0">
                             <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
                                     <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -622,9 +537,11 @@ return (
                         </div>
                         <div className="col-lg-3 col-md-6 p-0">
                             <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
                                     <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -646,9 +563,117 @@ return (
                         </div>
                         <div className="col-lg-3 col-md-6 p-0">
                             <div className=" product-search-item p-1">
-                                <div className="d-flex justify-content-end">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
                                     <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
+                                </div>
+                                <img className="w-100" src="./img/iphon.png " alt="" />
+                                <div>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                </div>
+                                <p className="my-1 text-right">
+                                    گوشی سامسونگ
+                                </p>
+
+                                <div className="d-flex text-right my-2">
+                                    <span className="ml-1 "> 465000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="row w-100 p-0 m-0 p-0">
+                        <div className="col-lg-3 col-md-6 p-0">
+                            <div className=" product-search-item p-1">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
+                                    <span>4.5</span>
+                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
+                                </div>
+                                <img className="w-100" src="./img/iphon.png " alt="" />
+                                <div>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                </div>
+                                <p className="my-1 text-right">
+                                    گوشی سامسونگ
+                                </p>
+
+                                <div className="d-flex text-right my-2">
+                                    <span className="ml-1 "> 465000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="col-lg-3 col-md-6 p-0">
+                            <div className=" product-search-item p-1">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
+                                    <span>4.5</span>
+                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
+                                </div>
+                                <img className="w-100" src="./img/iphon.png " alt="" />
+                                <div>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                </div>
+                                <p className="my-1 text-right">
+                                    گوشی سامسونگ
+                                </p>
+
+                                <div className="d-flex text-right my-2">
+                                    <span className="ml-1 "> 465000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="col-lg-3 col-md-6 p-0">
+                            <div className=" product-search-item p-1">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
+                                    <span>4.5</span>
+                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
+                                </div>
+                                <img className="w-100" src="./img/iphon.png " alt="" />
+                                <div>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                </div>
+                                <p className="my-1 text-right">
+                                    گوشی سامسونگ
+                                </p>
+
+                                <div className="d-flex text-right my-2">
+                                    <span className="ml-1 "> 465000</span>
+                                    <span>تومان</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="col-lg-3 col-md-6 p-0">
+                            <div className=" product-search-item p-1">
+                            <div className="d-flex justify-content-end align-items-center  product-search-item-top">
+                                <div className="d-flex">
+                                    <span>4.5</span>
+                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                    </div>
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>

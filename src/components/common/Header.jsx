@@ -97,7 +97,9 @@ const Header = () => {
                         <div className='col-8 col-md-3 m-0 p-0  d-flex justify-content-end '>
                         <div className="search-form d-flex border border-white align-items-center p-1  ">
                             <input type="text" className="form-control border-0 text-white" />
-                                    <img className="" src='./img/search1.png' />
+                          
+                            <img type="button" className="" src='./img/search1.png' />
+                                
                         </div>
                         </div>
                         <div id='main-nav-sidenav' className={getSideNav ? 'showSideNav' : null}>

@@ -42,15 +42,15 @@ return (
                        
 
 <ul className="nav nav-tabs payment-tab-heading" id="myTab" role="tablist">
-  <li className="nav-item">
+  <li className="nav-item w-50">
     <a className="nav-link active m-0" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">چهار شنبه</a>
   </li>
-  <li className="nav-item">
+  <li className="nav-item w-50">
     <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">پنج شنبه</a>
   </li>
   
 </ul>
-<div className="tab-content payment-tab-content" id="myTabContent">
+<div className="tab-content payment-tab-content p-1" id="myTabContent">
   <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
   <div className="form-check">
             <label className="form-check-label">
