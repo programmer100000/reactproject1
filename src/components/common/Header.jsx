@@ -24,24 +24,24 @@ const Header = () => {
                 <Link to='/' className="text-white" > 
                 
                    <span>
-                     <img src="./img/auction.png" alt=""/>سالن مزایده</span>
+                     <img src="./img/auction2.svg" alt=""/>سالن مزایده</span>
                     </Link>
             </li>
             <li className="px-md-1 px-lg-2 pb-3 py-2">
                 <Link to='/' className="text-white" >
-                    <img src="./img/store-icon.png" alt=""/>
+                    <img src="./img/store.svg" alt=""/>
                     <span>فروشگاه</span>
                 </Link>
             </li>
             <li className="px-md-1 px-lg-2 pb-3 py-2">
             <Link to='/' className="text-white" >
-                    <img src="./img/special-offer.png" alt=""/>
+                    <img src="./img/special-offer.svg" alt=""/>
                     <span>پیشنهاد ویژه </span>
                     </Link>
             </li>
             <li className="px-md-1 px-lg-2 pb-3 py-2">
             <Link to='/discounts' className="text-white" >
-                    <img src="./img/discounts.png" alt=""/>
+                    <img src="./img/discounts2.svg" alt=""/>
                     <span>تخفیف ها</span>
                     </Link>
             </li>
@@ -55,17 +55,17 @@ const Header = () => {
                 <div className="row header-bg">
                     
                 <div className='container  site-header p-0'>
-                    <div className="row w-100 m-0 p-0  top-nav align-content-start">
+                    <div className="row w-100 m-0 p-0  top-nav align-content-center">
                         <div className="col-12 d-flex  justify-content-start m-0 p-0 ">
                            <div className="col-4 p-0 col-md-9 top-nav-logo text-right p-0">
                                <a className="w-20" href='#' >
                                     <img className="w-20" src='./img/logo192.png' />
                                 </a>
                            </div>
-                           <div className="col-8 p-0 col-md-3 p-md-0 d-flex justify-content-center   ">
+                           <div className="col-8 p-0 col-md-3 p-md-0 d-flex align-items-center justify-content-end  ">
                             
                             <div className="top-nav-login-store d-flex  align-items-center justify-content-end">
-                            <NavLink to='/login' className='top-nav-login border border-white px-2 pb-1  d-flex align-items-center'>
+                            <NavLink to='/login' className='top-nav-login  px-2 pb-1  d-flex align-items-center'>
                                 <button
                                     className='border-0 text-white'>
                                     <img className="" src='./img/user-login1.png' />
@@ -75,7 +75,7 @@ const Header = () => {
                                 </span>
                             </NavLink>
                             <NavLink to="/card2">
-                                <img className="top-nav-store-link mr-2" src='./img/store1.png' />             
+                                <img className="top-nav-store-link mr-2" src='./img/store2.svg' />             
                             </NavLink>
                            
                             </div>
@@ -95,7 +95,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className='col-8 col-md-3 m-0 p-0  d-flex justify-content-end '>
-                        <div className="search-form d-flex border border-white align-items-center p-1  ">
+                        <div className="search-form d-flex align-items-center p-1  ">
                             <input type="text" className="form-control border-0 text-white" />
                           
                             <img type="button" className="" src='./img/search1.png' />

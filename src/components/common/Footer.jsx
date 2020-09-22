@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -15,10 +16,6 @@ const Footer = () => {
                           خدمات مشتریان
                        </span>
                         </div>
-                       
-                        
-                       
-                     
                         <p className="mr-4 pr-3">
                             گزارش باگ
                         </p>
@@ -34,7 +31,6 @@ const Footer = () => {
                         <p className="mr-4 pr-3">
                             پاسخ به پرسش های متداول
                         </p>
-
 </div>
  <div className="col-md-3 col-6 m-0 p-0 text-right to-footer-shopping-guide">
                         <div className="d-flex align-items-end text-right top-footer-heading  mb-3">
@@ -83,15 +79,15 @@ const Footer = () => {
             <div class="col-9 m-0">
               <div className="row w-100 m-0 px-0 py-2 pt-5 ">
                    <div className="col-12 m-0 p-0 d-flex footer-item align-items-center">
-                       <img src="./img/phone.png" alt="" className="phone-img ml-2" />
+                       <img src="./img/phone.svg" alt="" className="phone-img ml-2" />
                        <span className="text-white">
                            شماره تلفن: 0910 098 7878
                        </span>
                    </div>
                 </div>
-                <div className="row w-100 m-0 px-0 py-2 ">
+                <div className="row w-100 m-0 mb-3 px-0 py-2 ">
                    <div className="col-12 m-0 p-0 d-flex footer-item align-items-center">
-                       <img src="./img/email.png" alt="" className="email-img ml-2" />
+                       <img src="./img/email.svg" alt="" className="email-img ml-2" />
                        <span className="text-white">
                            ایمیل: example@gmail.com
                        </span>
@@ -107,14 +103,19 @@ const Footer = () => {
                 </div>
                 <div className="row w-100 m-0 px-0 py-2 ">
                    <div className="col-12 m-0 p-0 d-flex footer-item align-items-center ">
-                   <img src="./img/sotialmedia.png" alt="" className="sotialmedia-img mt-2" />
-                   
+                  
+                   <NavLink to="/" className="footer-link twitter-footer-link ml-3" > <img src="./img/twitter-footer.png" alt="" className="twitter-footer ml-3" />                   <img src="./img/twitter-footer-hover.png" alt="" className="twitter-footer-hover" /></NavLink>
+                   <NavLink to="/" className=" footer-link pinterest-footer-link ml-3" > <img src="./img/pinterest-footer.png" alt="" className="pinterest-footer ml-3" /><img src="./img/pinterest-footer-hover.png" alt="" className="pinterest-footer-hover " /></NavLink>
+                   <NavLink to="/"  className="footer-link facebook-footer-link ml-3" > <img src="./img/facebook-footer.png" alt="" className="facebook-footer ml-3" /><img src="./img/facebook-footer-hover.png" alt="" className="facebook-footer-hover " /></NavLink>
+                    <NavLink to="/" className="footer-link googleplus-footer-link ml-3" > <img src="./img/googleplus-footer.png" alt="" className="googleplus-footer ml-3" />                   <img src="./img/googleplus-footer-hover.png" alt="" className="googleplus-footer-hover" /></NavLink>
+                    
+                    
                    </div>
                 </div>
               
             </div>
-                <div class="col-3 m-0 d-flex align-content-center">
-                 <img src="./img/footer-bg-left.svg" alt="" className="w-100 " />
+                <div class="col-3 m-0 p-0 d-flex align-items-end">
+                 <img src="./img/footer-bg1.svg" alt="" className="footer-left-bg" />
                 </div>
             </div>
             </div>

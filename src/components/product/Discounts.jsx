@@ -13,7 +13,7 @@ const Discounts = () => {
                     </h1>
                 </div>
                   
-                    <div className="row w-100 p-0 m-0 p-0">
+                    <div className="row w-100 p-0 m-0 discounts">
                   
 
                       
@@ -21,7 +21,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -50,7 +50,6 @@ const Discounts = () => {
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                    
                         
@@ -58,7 +57,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -94,7 +93,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -134,7 +133,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -171,7 +170,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -207,7 +206,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -247,7 +246,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -284,7 +283,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>
@@ -320,7 +319,7 @@ const Discounts = () => {
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div>
+                                <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
                                 </div>

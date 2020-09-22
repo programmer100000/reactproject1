@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="222.145" height="222.424" viewBox="0 0 222.145 222.424">
+  <g id="TAKHFIF" transform="translate(-463.189 1017.096)">
+    <path id="Path_6" data-name="Path 6" d="M663.379-976.629v69.611l-106.69,106.69-87.843-87.843L573.168-992.494h69.493" fill="none" stroke="#fff" stroke-width="8"/>
+    <path id="Path_7" data-name="Path 7" d="M682.439-1014.336l-50.965,53.452" fill="none" stroke="#fff" stroke-width="8"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="matrix(0.998, -0.07, 0.07, 0.998, 596.558, -969.286)" fill="none" stroke="#fff" stroke-width="8">
+      <ellipse cx="20" cy="19.5" rx="20" ry="19.5" stroke="none"/>
+      <ellipse cx="20" cy="19.5" rx="16" ry="15.5" fill="none"/>
+    </g>
+    <path id="Path_8" data-name="Path 8" d="M548.189-918.206l23.618,50.965" fill="none" stroke="#fff" stroke-width="5"/>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="matrix(0.438, 0.899, -0.899, 0.438, 585.188, -914.506)" fill="none" stroke="#fff" stroke-width="5">
+      <ellipse cx="13" cy="11" rx="13" ry="11" stroke="none"/>
+      <ellipse cx="13" cy="11" rx="10.5" ry="8.5" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="matrix(0.438, 0.899, -0.899, 0.438, 544.188, -904.506)" fill="none" stroke="#fff" stroke-width="5">
+      <ellipse cx="13" cy="11" rx="13" ry="11" stroke="none"/>
+      <ellipse cx="13" cy="11" rx="10.5" ry="8.5" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192.766" height="181.869" viewBox="0 0 192.766 181.869">
+  <g id="MOZAYEDE" transform="translate(-716.944 874.887)">
+    <path id="Path_1" data-name="Path 1" d="M821.349-797.076l-8.34-8.34-12.024,12.024,43.2,43.2,12.4-12.4-23.674-23.674" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+    <path id="Path_2" data-name="Path 2" d="M856.5-762.361c.551-.689,3.587-3.333,3.587-3.333l44.623,44.133L885.352-702.2l-44.461-44.461,15.609-15.7Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+    <g id="Path_3" data-name="Path 3" transform="translate(717 -718)" fill="none" stroke-linecap="round">
+      <path d="M10.5,0h99A10.5,10.5,0,0,1,120,10.5c0,5.8,1.682,14.326-4.117,14.326L4.862,24.982C-.937,24.982,0,16.3,0,10.5A10.5,10.5,0,0,1,10.5,0Z" stroke="none"/>
+      <path d="M 10.49999237060547 10 L 9.999992370605469 10.5 L 9.971611022949219 12.84597492218018 C 9.961067199707031 13.42893218994141 9.947273254394531 14.19082069396973 9.94671630859375 14.97458076477051 L 110.1464004516602 14.83369159698486 C 110.1377944946289 14.64868640899658 110.1293182373047 14.47248077392578 110.1214370727539 14.30860042572021 C 110.0579376220703 12.98810005187988 109.9999923706055 11.69350051879883 109.4999923706055 10 L 10.49999237060547 10 M 10.49999237060547 0 L 109.4999923706055 0 C 115.2989883422852 0 119.9999923706055 4.701000213623047 119.9999923706055 10.5 C 119.9999923706055 16.29899978637695 121.6817932128906 24.82562446594238 115.8828125 24.82562446594238 L 4.86181640625 24.98175048828125 C -0.9371871948242188 24.98175048828125 -7.62939453125e-06 16.29899978637695 -7.62939453125e-06 10.5 C -7.62939453125e-06 4.701000213623047 4.701011657714844 0 10.49999237060547 0 Z" stroke="none" fill="#fff"/>
+    </g>
+    <path id="Path_4" data-name="Path 4" d="M764.958-737.046H818.9v20.506" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+    <path id="Path_5" data-name="Path 5" d="M749.116-737.046H736.1v20.369" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(732.076 -804.866) rotate(-45)" fill="none" stroke="#fff" stroke-width="5">
+      <rect width="17" height="66" rx="4" stroke="none"/>
+      <rect x="2.5" y="2.5" width="12" height="61" rx="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(789.076 -862.866) rotate(-45)" fill="none" stroke="#fff" stroke-width="5">
+      <rect width="17" height="66" rx="4" stroke="none"/>
+      <rect x="2.5" y="2.5" width="12" height="61" rx="1.5" fill="none"/>
+    </g>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(796.745 -858.715) rotate(45)" fill="none" stroke="#fff" stroke-width="10">
+      <rect width="51" height="70" rx="4" stroke="none"/>
+      <rect x="5" y="5" width="41" height="60" rx="1" fill="none"/>
+    </g>
+  </g>
+</svg>

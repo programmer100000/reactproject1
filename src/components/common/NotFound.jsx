@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NotFound = () => {
 return (
 <Fragment>
-    <div className="container-fluid single-product">
+    <div className="container-fluid ">
         <div className="container ">
             <div className="row notfound-content w-100 m-0 py-5">
                 <div className="col-md-8 notfound-txt   d-flex justify-content-center align-items-center  ">

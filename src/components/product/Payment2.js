@@ -28,7 +28,7 @@ return (
                           <img className="payment-confirm-product-img " src="./img/iphon.png" alt=""/>
                           </div>
                           <div className="col-md-9 p-0">
-                          <div className="d-flex">
+                          <div className="d-flex mb-2">
                                 {/* <img className="payment-confirm-product-icon ml-1" src="./img/payment-confirm-product-icon.png" alt=""/> */}
                               <div>
                                    <span className="payment-confirm-time">انتخاب زمان پرداخت</span>
@@ -93,7 +93,7 @@ return (
                           </div>
                       </div>
                     </div>
-<NavLink to="/card2" className="return-to-cart d-flex align-content-center">
+<NavLink to="/card2" className="return-to-cart d-flex align-content-center mt-2">
 <i className="fa fa-angle-right ml-1"></i>
   <span>
   بازگشت به سبد خرید

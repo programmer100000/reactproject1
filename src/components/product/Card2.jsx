@@ -4,16 +4,16 @@ import { useSelector } from 'react-redux';
 
 const Card2 = () => {
 
-    
-    const [getCount, setCount] = useState();
-    
     var products = useSelector((state) => state.product);
+    const [getCount, setCount] = useState();
+    const [getprolen, setprolen] = useState(products.length);
+
     console.log(products);
     let card = [];
     var arr = [];
-
+var prolen=getprolen;
     const handleAdd = (product) => {
-        
+       
         setCount(1);
         let product1 = [product.id, product.title, product.description, product.imageUrl, 1];
         let flag = false;
@@ -88,6 +88,9 @@ const Card2 = () => {
 
 
 const slideUp=(e ,i)=> {
+    console.log(getprolen);
+        setprolen(getprolen-1);
+        console.log(getprolen);
     var mdiv = document.getElementsByClassName('card-products-item')[i];
     mdiv.style.transition = "all .5s ease-in-out";
     mdiv.style.height = "0px";
@@ -97,6 +100,14 @@ const slideUp=(e ,i)=> {
     if(i>0){
         document.getElementsByClassName('card-products-item')[i-1].style.borderBottom = "none";
         document.getElementsByClassName('card-products-item')[i-1].style.borderColor= "transparent";
+       
+    }
+//    var l= document.getElementsByClassName('card-products-item').length;
+//    setprolen(l);
+  
+    if( getprolen === 0){
+        document.getElementsByClassName('card-products')[0].style.border= "none";
+        console.log("nnn");
     }
 
  
@@ -105,7 +116,7 @@ const slideUp=(e ,i)=> {
     return (
         <Fragment>
 
-            <div className="container-fluid single-product">
+            <div className="container-fluid ">
                 <div className="container ">
 
                     <div className="row ">
@@ -186,6 +197,7 @@ const slideUp=(e ,i)=> {
                                                 </div>
                                             </div>
                                         </div>
+                                  
                                     </div>
 
 
@@ -242,7 +254,7 @@ const slideUp=(e ,i)=> {
                             </div>
                             <div className="row justify-content-between align-items-center">
                                 <div className="col-lg-5 col-md-6">
-                                    <table class="table card-table">
+                                    <table className="table payment-table">
                                         <tr >
                                             <th className=" w-25 text-center">جمع قیمت</th>
                                             <td className="w-25 text-center">132000</td>

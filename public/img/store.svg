@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="217" height="266" viewBox="0 0 217 266">
+  <defs>
+    <clipPath id="clip-FOROSHGA">
+      <rect width="217" height="266"/>
+    </clipPath>
+  </defs>
+  <g id="FOROSHGA" clip-path="url(#clip-FOROSHGA)">
+    <path id="Path_5" data-name="Path 5" d="M2720.75-343.333,2742.667-158h-22L2713-342.25l-6.333-1.083L2702-130.667l-168-10.667,20.667-194,152-8" transform="translate(-2531 386)" fill="#fff" stroke="#fff" stroke-width="2"/>
+    <path id="Path_6" data-name="Path 6" d="M2699.59-132.908l23.91-27.842" transform="translate(-2531 386)" fill="none" stroke="#fff" stroke-width="10"/>
+    <path id="Path_7" data-name="Path 7" d="M2553.667-338.333l152.448-8.412,8.481,2.367,6.388-1.754" transform="translate(-2531 386)" fill="none" stroke="#fff" stroke-width="6"/>
+    <path id="Path_8" data-name="Path 8" d="M2620.8-339.3s4.117-34.45,32.5-34.017,36.833,32.933,36.833,32.933" transform="translate(-2531 386)" fill="none" stroke="#fff" stroke-width="8"/>
+    <path id="Path_9" data-name="Path 9" d="M2618.931-340.383s5.983-33.367,34.367-32.933c25.261.386,34.733,26.171,36.6,32.135.128.4.23.8.23.8" transform="translate(-2556 384)" fill="none" stroke="#fff" stroke-width="8"/>
+  </g>
+</svg>

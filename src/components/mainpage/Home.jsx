@@ -94,7 +94,7 @@ const goRight = (e) => {
 
 return (
 <Fragment>
-    <div className='container p-0 my-4'>
+    <div className='container p-0 my-5'>
         <div className="row p-0 m-0 special-offer-section mb-5">
             <div className="col-12 ">
                 <div className="d-flex align-items-center main-heading special-offer-heading mb-2">
@@ -198,7 +198,7 @@ return (
             </div>
         </div>
 
-        <div className=' row w-100 p-0 my-4  align-items-center m-0 p-0'>
+        <div className=' row w-100 p-0 my-4  align-items-center mx-0 p-0 my-5'>
             <div className="d-flex align-items-center main-heading mb-2">
                 <img className="ml-2" src='./img/discounts-heading.png' />
                 <h2 className="text-right m-0">تخفیف ها</h2>
@@ -339,7 +339,7 @@ breakpoints={{
         </div>
 
 
-        <div className='categories-section my-4'>
+        <div className='categories-section my-5'>
             <div className="row p-0 m-0 categories py-3 my-4">
                 <div className="h-100 col-md-2 col-3 p-0 pr-1 d-flex align-items-center justify-content-center text-center">
                     <span className=' mx-0 my-auto  '>دسته بندی ها</span>
@@ -449,7 +449,7 @@ breakpoints={{
 
            
         </div>
-        <div className=' row w-100 p-0 my-4  align-items-center m-0 p-0'>
+        <div className=' row w-100 p-0 my-4  align-items-center mx-0 p-0 my-5'>
             <div className="d-flex align-items-center main-heading mb-2">
                 <img className=" new-heading ml-2" src='./img/new-heading.png' />
                 <h2 className="text-right m-0">جدیدترین ها</h2>
