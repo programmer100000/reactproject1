@@ -11,12 +11,8 @@ const Discounts = () => {
                     <h1 className="text-right ">
                           تخفیف ها
                     </h1>
-                </div>
-                  
+                </div>   
                     <div className="row w-100 p-0 m-0 discounts">
-                  
-
-                      
                         <div className="col-lg-4 col-md-6 p-0">
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
@@ -24,8 +20,7 @@ const Discounts = () => {
                                 <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
+                                </div> 
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -38,30 +33,34 @@ const Discounts = () => {
                                     گوشی سامسونگ
                                 </p>
 
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
                                     <span className="ml-1 search-price "> 465000</span>
                                     <span>تومان</span>
                                     </div>
 
-                                     <div className="product-search-offer-price d-flex">
+                                     <div className="product-search-offer-price d-flex ">
                                     <span className="ml-1 search-offer-price "> 445000</span>
                                     <span>تومان</span>
                                     </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
                                 </div>
                             </div>
                         </div>
                    
                         
-                        <div className="col-lg-4 col-md-6 p-0">
+                         <div className="col-lg-4 col-md-6 p-0">
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
                                 <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
+                                </div> 
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -74,21 +73,24 @@ const Discounts = () => {
                                     گوشی سامسونگ
                                 </p>
 
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
                                     <span className="ml-1 search-price "> 465000</span>
                                     <span>تومان</span>
                                     </div>
 
-                                     <div className="product-search-offer-price d-flex">
+                                     <div className="product-search-offer-price d-flex ">
                                     <span className="ml-1 search-offer-price "> 445000</span>
                                     <span>تومان</span>
                                     </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
                                 </div>
                             </div>
-
                         </div>
-                        
                         <div className="col-lg-4 col-md-6 p-0">
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
@@ -96,8 +98,7 @@ const Discounts = () => {
                                 <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
+                                </div> 
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -110,34 +111,37 @@ const Discounts = () => {
                                     گوشی سامسونگ
                                 </p>
 
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
                                     <span className="ml-1 search-price "> 465000</span>
                                     <span>تومان</span>
                                     </div>
 
-                                     <div className="product-search-offer-price d-flex">
+                                     <div className="product-search-offer-price d-flex ">
                                     <span className="ml-1 search-offer-price "> 445000</span>
                                     <span>تومان</span>
                                     </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
                                 </div>
                             </div>
-
                         </div>
                
                    
                       
 
                       
-                        <div className="col-lg-4 col-md-6 p-0">
+                          <div className="col-lg-4 col-md-6 p-0">
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
                                 <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
+                                </div> 
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -150,67 +154,33 @@ const Discounts = () => {
                                     گوشی سامسونگ
                                 </p>
 
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
                                     <span className="ml-1 search-price "> 465000</span>
                                     <span>تومان</span>
                                     </div>
 
-                                     <div className="product-search-offer-price d-flex">
+                                     <div className="product-search-offer-price d-flex ">
                                     <span className="ml-1 search-offer-price "> 445000</span>
                                     <span>تومان</span>
                                     </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
                                 </div>
                             </div>
-
-                        </div>
-                   
-                        
-                        <div className="col-lg-4 col-md-6 p-0">
-                            <div className=" product-search-item p-1">
-                                <div className=" product-search-item-top d-flex justify-content-between align-items-center">
-                                <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div className="d-flex">
-                                <span>4.5</span>
-                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
-                                </div>
-                                <img className="w-100" src="./img/iphon.png " alt="" />
-                                <div>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                </div>
-                                <p className="my-1 text-right">
-                                    گوشی سامسونگ
-                                </p>
-
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
-                                    <span className="ml-1 search-price "> 465000</span>
-                                    <span>تومان</span>
-                                    </div>
-
-                                     <div className="product-search-offer-price d-flex">
-                                    <span className="ml-1 search-offer-price "> 445000</span>
-                                    <span>تومان</span>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                         
-                        <div className="col-lg-4 col-md-6 p-0">
+                         <div className="col-lg-4 col-md-6 p-0">
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
                                 <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
+                                </div> 
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -223,34 +193,76 @@ const Discounts = () => {
                                     گوشی سامسونگ
                                 </p>
 
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
                                     <span className="ml-1 search-price "> 465000</span>
                                     <span>تومان</span>
                                     </div>
 
-                                     <div className="product-search-offer-price d-flex">
+                                     <div className="product-search-offer-price d-flex ">
                                     <span className="ml-1 search-offer-price "> 445000</span>
                                     <span>تومان</span>
                                     </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
                                 </div>
                             </div>
+                        </div>
+                        
+                         <div className="col-lg-4 col-md-6 p-0">
+                            <div className=" product-search-item p-1">
+                                <div className=" product-search-item-top d-flex justify-content-between align-items-center">
+                                <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
+                                <div className="d-flex">
+                                <span>4.5</span>
+                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                </div> 
+                                </div>
+                                <img className="w-100" src="./img/iphon.png " alt="" />
+                                <div>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                </div>
+                                <p className="my-1 text-right">
+                                    گوشی سامسونگ
+                                </p>
 
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
+                                    <span className="ml-1 search-price "> 465000</span>
+                                    <span>تومان</span>
+                                    </div>
+
+                                     <div className="product-search-offer-price d-flex ">
+                                    <span className="ml-1 search-offer-price "> 445000</span>
+                                    <span>تومان</span>
+                                    </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
+                                </div>
+                            </div>
                         </div>
                     
                   
                       
 
                       
-                        <div className="col-lg-4 col-md-6 p-0">
+                         <div className="col-lg-4 col-md-6 p-0">
                             <div className=" product-search-item p-1">
                                 <div className=" product-search-item-top d-flex justify-content-between align-items-center">
                                 <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
                                 <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
+                                </div> 
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -263,56 +275,23 @@ const Discounts = () => {
                                     گوشی سامسونگ
                                 </p>
 
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
                                     <span className="ml-1 search-price "> 465000</span>
                                     <span>تومان</span>
                                     </div>
 
-                                     <div className="product-search-offer-price d-flex">
+                                     <div className="product-search-offer-price d-flex ">
                                     <span className="ml-1 search-offer-price "> 445000</span>
                                     <span>تومان</span>
                                     </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
                                 </div>
                             </div>
-
-                        </div>
-                   
-                        
-                        <div className="col-lg-4 col-md-6 p-0">
-                            <div className=" product-search-item p-1">
-                                <div className=" product-search-item-top d-flex justify-content-between align-items-center">
-                                <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
-                                <div className="d-flex">
-                                <span>4.5</span>
-                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
-                                </div>
-                                <img className="w-100" src="./img/iphon.png " alt="" />
-                                <div>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                    <i className="fa fa-circle ml-1"></i>
-                                </div>
-                                <p className="my-1 text-right">
-                                    گوشی سامسونگ
-                                </p>
-
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
-                                    <span className="ml-1 search-price "> 465000</span>
-                                    <span>تومان</span>
-                                    </div>
-
-                                     <div className="product-search-offer-price d-flex">
-                                    <span className="ml-1 search-offer-price "> 445000</span>
-                                    <span>تومان</span>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
                         
                         <div className="col-lg-4 col-md-6 p-0">
@@ -322,8 +301,7 @@ const Discounts = () => {
                                 <div className="d-flex">
                                 <span>4.5</span>
                                     <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
-                                </div>
-                                    
+                                </div> 
                                 </div>
                                 <img className="w-100" src="./img/iphon.png " alt="" />
                                 <div>
@@ -336,21 +314,63 @@ const Discounts = () => {
                                     گوشی سامسونگ
                                 </p>
 
-                                <div className="d-flex justify-content-between my-2">
-                                    <div className="product-search-price d-flex ">
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
                                     <span className="ml-1 search-price "> 465000</span>
                                     <span>تومان</span>
                                     </div>
 
-                                     <div className="product-search-offer-price d-flex">
+                                     <div className="product-search-offer-price d-flex ">
                                     <span className="ml-1 search-offer-price "> 445000</span>
                                     <span>تومان</span>
                                     </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
+                         <div className="col-lg-4 col-md-6 p-0">
+                            <div className=" product-search-item p-1">
+                                <div className=" product-search-item-top d-flex justify-content-between align-items-center">
+                                <img className=" product-search-takhfif mr-1 " src='./img/takhfif.png' alt="" />
+                                <div className="d-flex">
+                                <span>4.5</span>
+                                    <img className=" product-search-img mr-1 " src='./img/emtiaz.png' alt="" />
+                                </div> 
+                                </div>
+                                <img className="w-100" src="./img/iphon.png " alt="" />
+                                <div>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                    <i className="fa fa-circle ml-1"></i>
+                                </div>
+                                <p className="my-1 text-right">
+                                    گوشی سامسونگ
+                                </p>
+
+                                <div className="d-flex justify-content-start my-2">
+                                    <div className="product-search-price d-flex ml-2 ">
+                                    <span className="ml-1 search-price "> 465000</span>
+                                    <span>تومان</span>
+                                    </div>
+
+                                     <div className="product-search-offer-price d-flex ">
+                                    <span className="ml-1 search-offer-price "> 445000</span>
+                                    <span>تومان</span>
+                                    </div>
+                             
+                                </div>
+                                 <div className="d-flex justify-content-center py-2">
+                                       <a href="#" className="btn btn-primary product-payment-btn text-white "> افزودن به سبد
+                                خرید</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     
                    
                    

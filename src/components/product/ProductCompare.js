@@ -12,17 +12,30 @@ return (
                 <div className="row">
                     <div className="col-md-12">
                     <table class="table p-4 compare-imgs-table compare-table">
-                                                <tr cellspacing="1">
-                                                    <td className="w-25"> </td>
-                                                    <td className="w-25"> <img className=" product-compare-img mb-2 h-100 w-100" src='./img/iphon.png' alt="" /></td>
-                                                    <td className="w-25"><img className=" product-compare-img mb-2  h-100 w-100" src='./img/iphon.png' alt="" /></td>
-                                                    <td className="w-25"> <div
+                    <tr cellspacing="1">
+   <div className="row">
+   <div className="col-4 p-0">
+<td className="first"> </td>
+</div>
+<div className="col-4 p-0">
+<td className="second"><img className=" product-compare-img   h-100 w-100" src='./img/iphon.png' alt="" /></td>
+</div>
+<div className="col-4 p-0 ">
+<td className="last px-1  "> <div
 className="h-100  d-flex flex-column align-items-center justify-content-around">
-                        <img className=" product-compare-img mb-2 w-100" src='./img/add-product-compare.png' alt="" />
+                        <img className=" product-compare-img h-50 w-75 " src='./img/add-product-compare.png' alt="" />
 
                         <button type="button " class="btn btn-outline-primary compare-product-btn">افزودن
                             دستگاه</button>
                     </div></td>
+</div>
+       </div>                                          
+
+
+                                                 
+                                                   
+                                                  
+                                                   
                                                 </tr>
                                                 </table>
                     </div>
@@ -62,31 +75,31 @@ className="h-100  d-flex flex-column align-items-center justify-content-around">
                                                     <th className=" w-25">ابعاد</th>
                                                     <td className="w-25">185</td>
                                                     <td className="w-25">185</td>
-                                                    <td className="w-25">185</td>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <th>توضیحات</th>
                                                     <td>سایز نانو</td>
                                                     <td>سایز نانو</td>
-                                                    <td>سایز نانو</td>
+                                                   
                                                 </tr>
                                                 <tr>
                                                     <th>وزن</th>
                                                     <td>266 گرم</td>
                                                     <td>266 گرم</td>
-                                                    <td>266 گرم</td>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <th>ساختار بدنه</th>
                                                     <td>فلز شیشه</td>
                                                     <td>فلز شیشه</td>
-                                                    <td>فلز شیشه</td>
+                                                  
                                                 </tr>
                                                 <tr>
                                                     <th>ویژگی خاص</th>
                                                     <td>مناسب عکاسی</td>
                                                     <td>مناسب عکاسی</td>
-                                                    <td>مناسب عکاسی</td>
+                                                 
                                                 </tr>
 
                                             </table>
@@ -107,19 +120,19 @@ className="h-100  d-flex flex-column align-items-center justify-content-around">
                                                     <th className=" ">ابعاد</th>
                                                     <td className="">185</td>
                                                     <td className="">185</td>
-                                                    <td className="">185</td>
+                                                  
                                                 </tr>
                                                 <tr>
                                                     <th>توضیحات</th>
                                                     <td>سایز نانو</td>
                                                     <td>سایز نانو</td>
-                                                    <td>سایز نانو</td>
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <th>وزن</th>
                                                     <td>266 گرم</td>
                                                     <td>266 گرم</td>
-                                                    <td>266 گرم</td>
+                                                 
                                                 </tr>
 
                                             </table>
@@ -140,18 +153,17 @@ className="h-100  d-flex flex-column align-items-center justify-content-around">
                                                     <th className=" ">ابعاد</th>
                                                     <td className="">185</td>
                                                     <td className="">185</td>
-                                                    <td className="">185</td>
+                                                  
                                                 </tr>
                                                 <tr>
                                                     <th>توضیحات</th>
                                                     <td>سایز نانو</td>
-                                                    <td>سایز نانو</td>
+                                                   
                                                     <td>سایز نانو</td>
                                                 </tr>
                                                 <tr>
                                                     <th>وزن</th>
-                                                    <td>266 گرم</td>
-                                                    <td>266 گرم</td>
+                                                    
                                                     <td>266 گرم</td>
                                                 </tr>
                                             </table>
@@ -171,19 +183,19 @@ className="h-100  d-flex flex-column align-items-center justify-content-around">
                                             <tr cellspacing="1">
                                                     <th className=" ">ابعاد</th>
                                                     <td className="">185</td>
-                                                    <td className="">185</td>
+                                                 
                                                     <td className="">185</td>
                                                 </tr>
                                                 <tr>
                                                     <th>توضیحات</th>
                                                     <td>سایز نانو</td>
-                                                    <td>سایز نانو</td>
+                                                
                                                     <td>سایز نانو</td>
                                                 </tr>
                                                 <tr>
                                                     <th>وزن</th>
                                                     <td>266 گرم</td>
-                                                    <td>266 گرم</td>
+                                                   
                                                     <td>266 گرم</td>
                                                 </tr>
                                             </table>

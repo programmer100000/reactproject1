@@ -31,7 +31,11 @@ return (
                           <div className="d-flex mb-2">
                                 {/* <img className="payment-confirm-product-icon ml-1" src="./img/payment-confirm-product-icon.png" alt=""/> */}
                               <div>
+                                  <div className="d-flex">
+                                  <img className="payment-confirm-product-time ml-1" src="./img/delivery-time.png" alt=""/>
                                    <span className="payment-confirm-time">انتخاب زمان پرداخت</span>
+                                  </div>
+                              
                                 <NavLink to="/card2" className="payment-fast-sending d-flex align-content-center">
 
 ارسال سریع

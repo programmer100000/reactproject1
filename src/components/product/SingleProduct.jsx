@@ -4,6 +4,8 @@ import { getSingleProduct } from '../../actions/singleproduct';
 import { isEmpty } from 'lodash';
 import Select from 'react-select';
 import { Link, NavLink } from 'react-router-dom';
+import Rating  from 'react-rating';
+
 
 // const SingleProduct = ({ match }) => {
 // const dispatch = useDispatch();
@@ -36,6 +38,7 @@ import { Link, NavLink } from 'react-router-dom';
 // export default SingleProduct;
 
 const SingleProduct=()=>{
+   
 const [getMore, setMore] = useState(true);
 const [getClose, setClose] = useState(false);
 const handleOnclickMore = () => {
@@ -171,7 +174,12 @@ return(
                 </div>
                 <div className="col-lg-4 py-5">
                     <div className=" product-img-section p-2">
-                        <span className="text-left border border-white product-rating p-1">
+                        <span className="text-left  product-rating p-1">
+                        <Rating
+  emptySymbol="fa fa-star-o fa-2x"
+  fullSymbol="fa fa-star fa-2x"
+  fractions={2}
+/>
                         </span>
 
                         <div id="multi-item-example"
@@ -220,7 +228,7 @@ return(
                     </div>
                     <div className="d-flex justify-content-end p-1">
                         <NavLink to="/compare"><img className="product-link m-1" src='./img/product-comparison-icon.png' /></NavLink> 
-                        <img className="product-link m-1" src='./img/pro-diagram.png' />
+                        <NavLink to="/pricediagram"> <img className="product-link m-1" src='./img/pro-diagram.png' /></NavLink>
                         <img className="product-link m-1" src='./img/pro-share.png' />
                         <img className="product-link m-1" src='./img/pro-like.png' />
 

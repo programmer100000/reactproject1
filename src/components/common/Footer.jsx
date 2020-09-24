@@ -94,7 +94,7 @@ const Footer = () => {
                    </div>
                 </div>
                 <div className="row w-100 m-0 px-0 py-2 ">
-                   <div className="col-9 m-0 p-0 d-flex footer-item align-items-center">
+                   <div className="col-md-9 m-0 p-0 d-flex footer-item align-items-center">
                       
                        <span className="text-white text-right">
                           سرعت، دقت، بهترین پیشنهادات را با ما تجربه کنید
@@ -114,8 +114,11 @@ const Footer = () => {
                 </div>
               
             </div>
-                <div class="col-3 m-0 p-0 d-flex align-items-end">
-                 <img src="./img/footer-bg1.svg" alt="" className="footer-left-bg" />
+                <div class="col-md-3 d-none d-md-block m-0 p-0">
+                <div className=" d-flex align-items-end h-100">
+                  <img src="./img/footer-bg1.svg" alt="" className="footer-left-bg" />
+                </div>
+               
                 </div>
             </div>
             </div>

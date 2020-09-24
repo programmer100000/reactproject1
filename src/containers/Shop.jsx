@@ -22,6 +22,7 @@ import Payment2 from '../components/product/Payment2';
 import Location from '../components/product/Location';
 import Location1 from '../components/product/Location1';
 import Discounts from '../components/product/Discounts';
+import Diagram from '../components/product/Diagram';
 
 
 
@@ -39,6 +40,7 @@ const Shop = () => {
                 <Route path='/confirm' component={Confirm} />
                 <Route path='/profile' component={Profile} />
                 <Route path='/products' component={Products} />
+                 <Route path='/pricediagram' component={Diagram} />
                 {/*  <Route path='/product/:id' component={SingleProduct} /> */}
                    <Route path='/product' component={SingleProduct} />
                 <Route path='/cart' component={Cart} />

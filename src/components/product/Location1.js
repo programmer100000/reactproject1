@@ -50,7 +50,7 @@ export default function PickLocation(){
     return(
         <div className="container-fluid single-product">
         <div className="container">
-            <div className="row w-100  justify-content-center ">
+            <div className="row w-100 my-5 justify-content-center ">
                 <div className="col-8 py-4 px-2 mb-4 payment  text-right">
                     <h2>آدرس جدید</h2>
                     <p className="">لطفا موقعیت مکانی را بر روی نقشه وارد کنید</p>

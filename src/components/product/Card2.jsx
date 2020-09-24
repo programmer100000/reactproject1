@@ -273,7 +273,7 @@ const slideUp=(e ,i)=> {
                                         <tr>
 
                                             <td className=" text-center" colSpan="2">
-                                                <a type="button" className="btn btn-danger text-white">فرایند پرداخت</a>
+                                                <NavLink to="/location1" type="button" className="btn btn-danger text-white">فرایند پرداخت</NavLink>
                                             </td>
                                         </tr>
 

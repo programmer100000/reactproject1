@@ -2,21 +2,13 @@ import React, { Fragment, useState, useEffect } from 'react';
 import {getsliderimgs} from '../../services/sliderimgService';
 import { useSelector, useDispatch } from 'react-redux';
 
-import Flickity from 'react-flickity-component';
-
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import Countdown from 'react-countdown';
 import Slideshow from './Slideshow';
 
-// import Carousel from 'react-multi-carousel';
-// import 'react-multi-carousel/lib/styles.css';
-
-// import Carousel from '@brainhubeu/react-carousel';
-// import '@brainhubeu/react-carousel/lib/style.css';
-// import Icon from 'react-fa';
 
 const Home = () => {
 const dispatch = useDispatch();
@@ -29,33 +21,19 @@ const flickityOptions = {
     wrapAround:true
 }
 var settings = {
-    className: "slider variable-width",
     arrows: true,
-    dots: true,
-    infinite: false,
+    dots: false,
+    infinite: true,
     centerMode: true,
     slidesToShow: 3,
-    variableWidth: true
+    slidesToScroll:1,
+    autoplay:true,
+    autoplaySpeed:2000,
+    centerPadding:'0'
 
   };
 
-  const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3
-   
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-   
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-    
-  }
-};
+
 
 
 const Completionist = () => <span className="text-white time">زمان مزایده به پایان رسید!</span>;
@@ -74,22 +52,8 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 
-// useEffect(() => {
-//     var list = document.getElementsByClassName("arSlider")[0];
-//     console.log(list);
-//   var a=list.getElementsByClassName("arSlide");
-//     console.log(a);
-//     console.log('2123123');
-// }, []);
-const goLeft = (e) => {
-   
 
-   
-};
-const goRight = (e) => {
-  
-   
-};
+
 
 
 return (
@@ -101,7 +65,7 @@ return (
                 <img className="ml-2" src='./img/special-offer-header.png' />
                 <h2 className="text-right m-0">پیشنهاد ویژه</h2>
                 </div>
-              
+{/*               
                <Slideshow
   interval={5000}
   images={[
@@ -111,47 +75,19 @@ return (
     "./img/ps4slider.png",
   "./img/ps4slider.png"
   ]}
-/>
-{/* <div class="sliderWrapper">
-    <div id="slider1" className="arSlider">
-        {sliderimgs.map((img,i) => (
-                                <div className="arSlide " key={i}>
-                                    <img src={img.imageUrl} alt=""/>
-                                </div>   
-                                    ))}
-        <button className="goLeft">
-            <i className="fa fa-chevron-left" onClick={(e) => { goLeft(e)}}></i>
-        </button>
-        <button className="goRight">
-            <i className="fa fa-chevron-right" onClick={(e) => { goRight(e)}}></i>
-        </button>
-    </div>
-</div> */}
-                {/* <Flickity
-                    className={'main-carousel'} // default ''
-                    elementType={'div'} // default 'div'
-                    options={flickityOptions} // takes flickity options {}
-                    disableImagesLoaded={false} // default false
-                    reloadOnUpdate={true} // default false
-                    static
-                    percentPosition= {true}
-                >
-                    {sliderimgs.map((img) => (
-                                <div class="carousel-cell d-flex align-items-center justify-content-center"> 
-                                        <img className="" src={img.imageUrl} />
-                                        </div>
-                                    ))}
-                </Flickity> */}
+/> */}
 
-      {/* <Slider {...settings}>
+            
+
+      <Slider {...settings} className="for-slick-slider py-2 multiple-items justify-content-center align-items-center">
       {sliderimgs.map((img) => (
-                 <div >
-  <img className="slider-img" src={img.imageUrl} />
+                 <div className="items" >
+  <img  src={img.imageUrl} />
                        
                  </div>
                       
                     ))}
-      </Slider> */}
+      </Slider>
 
             </div>
         </div>
